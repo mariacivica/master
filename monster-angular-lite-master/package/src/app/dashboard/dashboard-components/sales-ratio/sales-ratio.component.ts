@@ -41,12 +41,12 @@ export class SalesRatioComponent implements OnInit {
     this.salesChartOptions = {
       series: [
         {
-          name: "2020",
-          data: [20, 40, 50, 30, 40, 50, 30, 30, 40, 20, 30, 15],
+          name: "2022",
+          data: [80, 99, 50, 30, 10, 50, 30, 30, 40, 5, 30, 15],
         },
         {
-          name: "2022",
-          data: [10, 20, 40, 60, 20, 40, 60, 60, 20, 30, 40, 35],
+          name: "2023",
+          data: [90, 90, 98, 60, 50, 40, 60, 60, 80, 88, 40, 0],
         },
       ],
       chart: {

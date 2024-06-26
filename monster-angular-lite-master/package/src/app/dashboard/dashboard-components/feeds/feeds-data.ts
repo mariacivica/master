@@ -10,32 +10,32 @@ export const Feeds: Feed[] = [
     {
         class: 'bg-info',
         icon: 'bi bi-bell',
-        task: 'You have 4 pending tasks.',
-        time: 'Just Now'
+        task: 'Tienes 2 cursos pendientes.', //Dependiendo de los cursos que tenga pendientes el profesional el número cambiará
+        time: 'Ahora'
     },
     {
         class: 'bg-success',
         icon: 'bi bi-hdd',
-        task: 'Server #1 overloaded.',
-        time: '2 Hours ago'
+        task: 'Web sobrecargada.',
+        time: 'Hace 2 horas'
     },
     {
         class: 'bg-warning',
         icon: 'bi bi-bag-check',
-        task: 'New order received.',
-        time: '31 May'
+        task: 'Correo actualizado.',
+        time: '24 Junio'
     },
     {
         class: 'bg-danger',
         icon: 'bi bi-person',
-        task: 'New user registered.',
-        time: '30 May'
+        task: 'Usuario registrado.',
+        time: '21 Junio'
     },
     {
         class: 'bg-primary',
         icon: 'bi bi-person',
-        task: 'You have new password.',
-        time: '21 May'
+        task: 'Contraseña actualizada.',
+        time: '21 Junio'
     },
 
-] 
+]
