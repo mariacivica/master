@@ -28,7 +28,7 @@ export const blogcards: blogcard[] = [
     {
         title: 'Backend',
         subtitle: '',
-        subtext: 'Parte del desarrollo web que se encarga del servidor, base de datos y la lógica de la aplicación. Gestiona, procesa datos y garantiza el buen funcionamiento.',
+        subtext: 'Parte del desarrollo web que se encarga del servidor, base de datos y la lógica de la aplicación. Gestión, proceso de datos y garantía de buen funcionamiento.',
         image: 'assets/images/bg/bg4.jpg'
     },
 
