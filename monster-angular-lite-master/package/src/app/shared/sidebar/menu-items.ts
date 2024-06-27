@@ -1,10 +1,10 @@
 import { RouteInfo } from './sidebar.metadata';
 
 export const ROUTES: RouteInfo[] = [
- 
+
   {
     path: '/dashboard',
-    title: 'Dashboard',
+    title: 'Panel de control',
     icon: 'bi bi-speedometer2',
     class: '',
     extralink: false,
@@ -12,7 +12,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/component/alert',
-    title: 'Alert',
+    title: 'Alerta',
     icon: 'bi bi-bell',
     class: '',
     extralink: false,
@@ -28,7 +28,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/component/buttons',
-    title: 'Button',
+    title: 'Botón',
     icon: 'bi bi-hdd-stack',
     class: '',
     extralink: false,
@@ -36,7 +36,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/component/card',
-    title: 'Card',
+    title: 'Tarjeta',
     icon: 'bi bi-card-text',
     class: '',
     extralink: false,
@@ -44,7 +44,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/component/dropdown',
-    title: 'Dropdown',
+    title: 'Desplegable',
     icon: 'bi bi-menu-app',
     class: '',
     extralink: false,
@@ -52,7 +52,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/component/pagination',
-    title: 'Pagination',
+    title: 'Paginación',
     icon: 'bi bi-dice-1',
     class: '',
     extralink: false,
@@ -60,7 +60,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/component/nav',
-    title: 'Nav',
+    title: 'Navegación',
     icon: 'bi bi-pause-btn',
     class: '',
     extralink: false,
@@ -68,7 +68,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/component/table',
-    title: 'Table',
+    title: 'Tabla',
     icon: 'bi bi-layout-split',
     class: '',
     extralink: false,
@@ -76,7 +76,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/about',
-    title: 'About',
+    title: 'A cerca de',
     icon: 'bi bi-people',
     class: '',
     extralink: false,

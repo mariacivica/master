@@ -10,7 +10,7 @@ export const topcards: topcard[] = [
     {
         bgcolor: 'success',
         icon: 'bi bi-wallet',
-        title: '70',
+        title: '70%',
         subtitle: 'Aprendizaje general anual'
     },
     {
@@ -22,13 +22,13 @@ export const topcards: topcard[] = [
     {
         bgcolor: 'warning',
         icon: 'bi bi-basket3',
-        title: '60',
+        title: '60%',
         subtitle: 'Aprendizaje individual anual'
     },
     {
         bgcolor: 'info',
         icon: 'bi bi-bag',
-        title: '100',
+        title: '100%',
         subtitle: 'Objetivos semanales'
     },
 
