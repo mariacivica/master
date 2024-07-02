@@ -26,13 +26,13 @@ export const blogcards: blogcard[] = [
       subtitle: '',
       subtext: 'Parte del desarrollo web que se centra en el diseño y la implementación de la interfaz de usuario (interacción con la app o sitio web).',
       image: 'assets/images/bg/bg3.jpg',
-      route: 'frontend' // Añadimos una ruta para esta tarjeta
+      route: 'front' // Añadimos una ruta para esta tarjeta
   },
   {
       title: 'Backend',
       subtitle: '',
       subtext: 'Parte del desarrollo web que se encarga del servidor, base de datos y la lógica de la aplicación. Gestión, proceso de datos y garantía de buen funcionamiento.',
       image: 'assets/images/bg/bg4.jpg',
-      route: 'backend' // Añadimos una ruta para esta tarjeta
+      route: 'back' // Añadimos una ruta para esta tarjeta
   },
 ];
