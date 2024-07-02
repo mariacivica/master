@@ -9,6 +9,7 @@ import { FeedsComponent } from "./dashboard-components/feeds/feeds.component";
 import { TopSellingComponent } from "./dashboard-components/top-selling/top-selling.component";
 import { TopCardsComponent } from "./dashboard-components/top-cards/top-cards.component";
 import { BlogCardsComponent } from "./dashboard-components/blog-cards/blog-cards.component";
+import { IngenieriaDatosComponent } from './dashboard-components/blog-cards/ingenieria-datos/ingenieria-datos.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,9 @@ const routes: Routes = [
       urls: [{ title: "Dashboard", url: "/dashboard" }, { title: "Dashboard" }],
     },
     component: DashboardComponent,
+    children: [
+      { path: 'ingenieria-datos', component: IngenieriaDatosComponent }
+    ]
   },
 ];
 
@@ -36,7 +40,8 @@ const routes: Routes = [
     FeedsComponent,
     TopSellingComponent,
     TopCardsComponent,
-    BlogCardsComponent
+    BlogCardsComponent,
+    IngenieriaDatosComponent
   ],
 })
 export class DashboardModule {}

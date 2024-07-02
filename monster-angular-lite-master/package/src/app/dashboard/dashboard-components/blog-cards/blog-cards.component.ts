@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {blogcard,blogcards} from './blog-cards-data';
+import { blogcard, blogcards } from './blog-cards-data';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog-cards',
@@ -7,14 +8,16 @@ import {blogcard,blogcards} from './blog-cards-data';
 })
 export class BlogCardsComponent implements OnInit {
 
-  blogcards:blogcard[];
+  blogcards: blogcard[];
 
-  constructor() {
-
-    this.blogcards=blogcards;
+  constructor(private router: Router) {
+    this.blogcards = blogcards;
   }
 
   ngOnInit(): void {
   }
 
+  redirectToPage(route: string): void {
+    this.router.navigate([route]);
+  }
 }

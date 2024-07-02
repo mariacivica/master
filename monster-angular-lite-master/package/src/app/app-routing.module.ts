@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { FullComponent } from './layouts/full/full.component';
+import { IngenieriaDatosComponent } from './dashboard/dashboard-components/blog-cards/ingenieria-datos/ingenieria-datos.component';
 
 export const Approutes: Routes = [
   {
@@ -20,7 +21,10 @@ export const Approutes: Routes = [
       {
         path: 'component',
         loadChildren: () => import('./component/component.module').then(m => m.ComponentsModule)
-      }
+      },
+      // Agregando rutas para los componentes específicos
+      { path: 'ingenieria-datos', component: IngenieriaDatosComponent }
+
     ]
   },
   {
@@ -28,3 +32,9 @@ export const Approutes: Routes = [
     redirectTo: '/starter'
   }
 ];
+
+@NgModule({
+  imports: [RouterModule.forRoot(Approutes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
