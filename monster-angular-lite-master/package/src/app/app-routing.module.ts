@@ -26,10 +26,10 @@ export const Approutes: Routes = [
         loadChildren: () => import('./component/component.module').then(m => m.ComponentsModule)
       },
       // Agregando rutas para los componentes específicos
-      { path: 'ingenieria-datos', component: IngenieriaDatosComponent },
-      { path: 'analisis-datos', component: AnalisisDatosComponent },
-      { path: 'front', component: FrontComponent },
-      { path: 'back', component: BackComponent }
+      { path: 'analisis-datos', loadComponent: () => import('./dashboard/dashboard-components/blog-cards/analisis-datos/analisis-datos.component').then(m => m.AnalisisDatosComponent) },
+      { path: 'ingenieria-datos', loadComponent: () => import('./dashboard/dashboard-components/blog-cards/ingenieria-datos/ingenieria-datos.component').then(m => m.IngenieriaDatosComponent) },
+      { path: 'front', loadComponent: () => import('./dashboard/dashboard-components/blog-cards/front/front.component').then(m => m.FrontComponent) },
+      { path: 'back', loadComponent: () => import('./dashboard/dashboard-components/blog-cards/back/back.component').then(m => m.BackComponent) },
 
     ]
   },

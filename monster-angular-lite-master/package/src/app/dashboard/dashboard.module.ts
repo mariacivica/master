@@ -45,9 +45,6 @@ const routes: Routes = [
     TopSellingComponent,
     TopCardsComponent,
     BlogCardsComponent,
-    IngenieriaDatosComponent,
-    AnalisisDatosComponent,
-    FrontComponent
   ],
 })
 export class DashboardModule {}
