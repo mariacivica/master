@@ -72,7 +72,7 @@ export class SalesRatioComponent implements OnInit {
           borderRadius: 5,
         },
       },
-      colors: ["#0d6efd", "#009efb", "#6771dc"],
+      colors: ["#FFAD32", "#FF5038", "#333333"],
       stroke: {
         show: true,
         width: 4,

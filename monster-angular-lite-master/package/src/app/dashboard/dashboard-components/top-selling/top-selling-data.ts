@@ -20,7 +20,7 @@ export const TopSelling: Product[] = [
         budget: '99/100'
     },
     {
-        image: 'assets/images/users/user2.jpg',
+        image: 'assets/images/users/user1.jpg',
         uname: 'María González',
         gmail: 'maria.gonzalez@civica-soft.com',
         productName: 'Backend',
@@ -29,7 +29,7 @@ export const TopSelling: Product[] = [
         budget: '99/100'
     },
     {
-        image: 'assets/images/users/user3.jpg',
+        image: 'assets/images/users/user1.jpg',
         uname: 'María González',
         gmail: 'maria.gonzalez@civica-soft.com',
         productName: 'Ingeniería de Datos	',
@@ -38,7 +38,7 @@ export const TopSelling: Product[] = [
         budget: '90/100'
     },
     {
-        image: 'assets/images/users/user4.jpg',
+        image: 'assets/images/users/user1.jpg',
         uname: 'María González',
         gmail: 'maria.gonzalez@civica-soft.com',
         productName: 'Análisis de Datos',
