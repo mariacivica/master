@@ -26,7 +26,7 @@ export type salesChartOptions = {
   colors: string[] | any;
   markers: any;
   grid: ApexGrid | any;
-  plotOptions: ApexPlotOptions |any;
+  plotOptions: ApexPlotOptions | any;
 };
 
 @Component({
@@ -37,6 +37,7 @@ export class SalesRatioComponent implements OnInit {
 
   @ViewChild("chart") chart: ChartComponent = Object.create(null);
   public salesChartOptions: Partial<salesChartOptions>;
+
   constructor() {
     this.salesChartOptions = {
       series: [
@@ -85,18 +86,18 @@ export class SalesRatioComponent implements OnInit {
       },
       xaxis: {
         categories: [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec"
+          "Ingeniería de Datos",
+          "Análisis de Datos",
+          "Front-end",
+          "Back-end",
+          "IA",
+          "x",
+          "x",
+          "x",
+          "x",
+          "x",
+          "x",
+          "x"
         ],
       },
       tooltip: {
