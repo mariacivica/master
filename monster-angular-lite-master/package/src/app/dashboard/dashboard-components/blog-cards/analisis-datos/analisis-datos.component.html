@@ -1,9 +1,9 @@
 <div class="card">
   <div class="card-body">
     <!-- title -->
-    <h4 class="card-title">Análisis de Datos</h4>
+    <h4 class="card-title">Herramientas BI</h4>
 
-    <div class="row mt-4">
+    <div class="row mt-1">
       <div class="col-md-12">
         <div class="card">
           <div class="p-3">
@@ -13,7 +13,25 @@
               <li [ngbNavItem]="1">
                 <button ngbNavLink>Teoría y ejercicios</button>
                 <ng-template ngbNavContent>
-                  <p>Aquí va el contenido de Teoría y ejercicios.</p>
+                  <!-- Modificado para incluir recursos de análisis de datos en una tabla -->
+                  <div class="table-responsive mt-4">
+                    <table class="table align-middle">
+                      <thead>
+                        <tr>
+                          <th class="text-dark font-medium fs-4">Tecnología</th>
+                          <th class="text-dark font-medium fs-4">Descripción</th>
+                          <th class="text-dark font-medium fs-4">Acceso</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let resource of analysisResources">
+                          <td class="fs-4 resource-name">{{ resource.name }}</td>
+                          <td class="fs-4">{{ resource.description }}</td>
+                          <td><a href="{{ resource.resourceLink }}" class="custom-link">Recursos Disponibles</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </ng-template>
               </li>
               <li [ngbNavItem]="2">
@@ -23,13 +41,10 @@
                 </ng-template>
               </li>
             </ul>
-
             <div [ngbNavOutlet]="nav" class="mt-2"></div>
           </div>
         </div>
       </div>
     </div>
-
-    <p class="mt-4">Si ya tienes conocimientos previos de este recurso, puedes acceder directamente al <a href="#test" data-bs-toggle="tab" role="tab" aria-controls="test" aria-selected="false">test de competencias</a>.</p>
   </div>
 </div>

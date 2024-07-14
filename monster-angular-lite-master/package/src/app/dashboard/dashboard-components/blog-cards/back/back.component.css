@@ -1,3 +1,44 @@
 h2 {
   color: #2c3e50;
 }
+
+/* Nuevo estilo para los enlaces personalizados */
+.custom-link {
+  font-weight: bold;
+  color: #FF5038;
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.custom-link:hover {
+  font-weight: bold;
+  color: #FFAD32;
+  text-decoration: underline; /* Añade subrayado al pasar el mouse */
+}
+
+/* Estilo para resaltar el nombre del recurso */
+.resource-name {
+  font-weight: bold; /* Texto en negrita */
+  color: #333333; /* Color del texto */
+}
+
+
+/* Estilos para las pestañas activas */
+.nav-tabs .nav-link.active {
+  color: #FF5038; /* Cambia el color del texto de la pestaña activa */
+  border-color: #FF5038 #FF5038 #fff; /* Ajusta los bordes de la pestaña activa */
+  background-color: #fff; /* Fondo blanco para la pestaña activa */
+}
+
+.nav-tabs .nav-link {
+  color: #2c3e50; /* Color del texto de las pestañas inactivas */
+}
+
+/* Estilo para resaltar el título "Ingeniería de datos" */
+.card-title {
+  font-size: 2rem; /* Aumenta el tamaño de la fuente */
+  color: #FF5038; /* Cambia el color del texto */
+  font-weight: bold; /* Pone el texto en negrita */
+  border-bottom: 2px solid #FF5038; /* Añade un borde inferior */
+  padding-bottom: 0.5rem; /* Añade un espaciado inferior */
+  margin-bottom: 1rem; /* Añade un margen inferior */
+}

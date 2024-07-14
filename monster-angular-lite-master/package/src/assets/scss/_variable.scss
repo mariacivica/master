@@ -1,23 +1,23 @@
-// 
+//
 // Custom layout variables
-// 
+//
 @import "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900";
 
-// 
+//
 // Theme Global setting colors
-// 
-$themecolor: #009efb;
-$themecolor-dark: #028ee1;
-$themecolor-alt: #26c6da;
+//
+$themecolor: #FF5038;
+$themecolor-dark: #FF5038;
+$themecolor-alt: #FFAD32;
 $theme-light: #fff;
-$theme-dark: #212529;
+$theme-dark: #333333;
 
-$skin1: #009efb;
+$skin1: #FF5038;
 $skin6: #fff;
 
-// 
+//
 // Topbar settings
-// 
+//
 
 $topbar: $theme-light;
 $topbar-height: 64px;
@@ -26,34 +26,34 @@ $topbar-navlink-font-size: 1rem;
 $topbar-navlink-height: 64px;
 $topbar-navbrand-padding: 0 10px 0 10px;
 
-// 
+//
 // Sidebar settings
-// 
+//
 
 $sidebar: $theme-light;
 $sidebar-text: #fff;
 $sidebar-icons: #fff;
-$sidebar-text-dark: #212529;
-$sidebar-icons-dark: #212529;
+$sidebar-text-dark: #333333;
+$sidebar-icons-dark: #333333;
 
 $sidebar-width-full: 250px;
 $sidebar-width-mini: 65px;
 
-// 
+//
 // Layout settings
-// 
+//
 $page-wrapper-max-width: 1300px;
 
-// 
+//
 // Common settings
-// 
+//
 $shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
 $transitions: 0.2s ease-in;
 $transparent-dark-bg: rgba(0, 0, 0, 0.05);
 
-// 
+//
 // Bootstrap override colors
-// 
+//
 $white: #fff !default;
 $gray-100: #ebf3f5 !default;
 $gray-200: #e9ecef !default;
@@ -139,9 +139,9 @@ $theme-colors: map-merge(
   $theme-colors
 );
 
-// 
+//
 // Enable optional
-// 
+//
 $enable-caret: true !default;
 $enable-rounded: true !default;
 $enable-shadows: false !default;
@@ -152,17 +152,17 @@ $enable-grid-classes: true !default;
 $enable-print-styles: true !default;
 $enable-negative-margins: true;
 
-// 
+//
 // Body
-// 
+//
 $grid-gutter-width: 30px !default;
 $main-body-bg: #fff !default;
 $body-bg: #f2f7f8;
 $body-color: #54667a !default;
 
-// 
+//
 // Typography
-// 
+//
 $font-size-base: 1rem;
 $font-family-sans-serif: "Rubik", sans-serif !default;
 
@@ -204,9 +204,9 @@ $display-font-sizes: (
   7: 2rem
 ) !default;
 
-// 
+//
 // Cards
-// 
+//
 $card-spacer-y: 1.25rem !default;
 $card-spacer-x: 1.25rem !default;
 $card-border-width: 0px !default;
@@ -215,9 +215,9 @@ $card-border-color: transparent !default;
 $card-columns-margin: 20px !default;
 $card-bg: $white;
 
-// 
+//
 // Buttons
-// 
+//
 $btn-secondary-border: $gray-300;
 $btn-border-radius: 4px !default;
 $btn-border-radius-sm: 4px !default;
@@ -226,14 +226,14 @@ $btn-box-shadow: none !default;
 $btn-focus-box-shadow: none !default;
 $btn-close-focus-shadow:     none !default;
 
-// 
+//
 // Progressbar
-// 
+//
 $progress-bg: $gray-100;
 
-// 
+//
 // Tables
-// 
+//
 $table-bg-accent: $gray-100;
 $table-bg-hover: $gray-100;
 $table-hover-bg: $gray-100 !default;
@@ -244,9 +244,9 @@ $table-striped-bg: $light !default;
 $table-group-separator-color: $gray-200;
 $table-bg: $white;
 
-// 
+//
 // Components
-// 
+//
 $component-active-color: $white !default;
 $component-active-bg: $themecolor !default;
 $badge-font-weight: 400 !default;
@@ -255,9 +255,9 @@ $badge-font-size: 0.75rem !default;
 $badge-padding-y: 3px !default;
 $badge-padding-x: 10px !default;
 
-// 
+//
 // border
-// 
+//
 
 $border-width: 1px !default;
 $border-color: $gray-200 !default;
@@ -273,19 +273,19 @@ $dropdown-border-color: $gray-200;
 $dropdown-divider-bg: $gray-100;
 $dropdown-bg: $white;
 
-// 
+//
 // Progressbars
-// 
+//
 $progress-height: 5px !default;
 
-// 
+//
 // Tabs
-// 
+//
 $nav-tabs-link-active-bg: $white !default;
 
-// 
+//
 // Grid breakpoints
-// 
+//
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -294,9 +294,9 @@ $grid-breakpoints: (
   xl: 1600px,
 ) !default;
 
-// 
+//
 // Navbar
-// 
+//
 $navbar-dark-color: rgba($white, 0.8) !default;
 $navbar-dark-hover-color: rgba($white, 1) !default;
 
