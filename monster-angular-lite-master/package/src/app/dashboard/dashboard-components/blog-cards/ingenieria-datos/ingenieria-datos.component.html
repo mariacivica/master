@@ -20,6 +20,7 @@
                         <tr>
                           <th class="text-dark font-medium fs-4">Tecnología</th>
                           <th class="text-dark font-medium fs-4">Descripción</th>
+                          <th class="text-dark font-medium fs-4">Estado</th>
                           <th class="text-dark font-medium fs-4">Acceso</th>
                         </tr>
                       </thead>
@@ -27,6 +28,13 @@
                         <tr *ngFor="let platform of platforms">
                           <td class="fs-4 resource-name">{{ platform.name }}</td>
                           <td class="fs-4">{{ platform.description }}</td>
+                          <td>
+                            <span class="status-badge" [ngClass]="{
+                              'completado': platform.status === 'Completado',
+                              'en-curso': platform.status === 'En curso',
+                              'sin-iniciar': platform.status === 'Sin iniciar'
+                            }">{{ platform.status }}</span>
+                          </td>
                           <td><a href="{{ platform.resourceLink }}" class="custom-link">Recursos Disponibles</a></td>
                         </tr>
                       </tbody>
