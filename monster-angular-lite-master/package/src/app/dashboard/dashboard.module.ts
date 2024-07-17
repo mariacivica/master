@@ -9,7 +9,7 @@ import { TopCardsComponent } from "./dashboard-components/top-cards/top-cards.co
 import { BlogCardsComponent } from "./dashboard-components/blog-cards/blog-cards.component";
 import { IngenieriaDatosComponent } from './dashboard-components/blog-cards/ingenieria-datos/ingenieria-datos.component';
 import { AnalisisDatosComponent } from './dashboard-components/blog-cards/analisis-datos/analisis-datos.component';
-import { FrontComponent } from "./dashboard-components/blog-cards/front/front.component";
+import { FrontComponent } from "./dashboard-components/blog-cards/2-front/front.component";
 
 const routes: Routes = [
   {

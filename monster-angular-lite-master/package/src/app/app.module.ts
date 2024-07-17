@@ -20,7 +20,7 @@ import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
 import { AnalisisDatosComponent } from './dashboard/dashboard-components/blog-cards/analisis-datos/analisis-datos.component';
 import { IngenieriaDatosComponent } from './dashboard/dashboard-components/blog-cards/ingenieria-datos/ingenieria-datos.component';
-import { FrontComponent } from './dashboard/dashboard-components/blog-cards/front/front.component';
+import { FrontComponent } from './dashboard/dashboard-components/blog-cards/2-front/front.component';
 import { BackComponent } from './dashboard/dashboard-components/blog-cards/back/back.component';
 
 @NgModule({
