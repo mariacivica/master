@@ -21,7 +21,6 @@ h2 {
   color: #333333; /* Color del texto */
 }
 
-
 /* Estilos para las pestañas activas */
 .nav-tabs .nav-link.active {
   color: #FF5038; /* Cambia el color del texto de la pestaña activa */
@@ -33,7 +32,7 @@ h2 {
   color: #2c3e50; /* Color del texto de las pestañas inactivas */
 }
 
-/* Estilo para resaltar el título "Ingeniería de datos" */
+/* Estilo para resaltar el título "Frontend" */
 .card-title {
   font-size: 2rem; /* Aumenta el tamaño de la fuente */
   color: #FF5038; /* Cambia el color del texto */
@@ -41,4 +40,33 @@ h2 {
   border-bottom: 2px solid #FF5038; /* Añade un borde inferior */
   padding-bottom: 0.5rem; /* Añade un espaciado inferior */
   margin-bottom: 1rem; /* Añade un margen inferior */
+}
+
+/* Estilos para los estados */
+.status-badge {
+  display: inline-block;
+  width: 110px; /* Ancho fijo para todos los estados */
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 0.25rem;
+  text-align: center;
+  opacity: 0.8; /* Más transparencia */
+}
+
+.status-badge.completado {
+  background-color: rgba(40, 167, 69, 0.8); /* Verde  transparente */
+}
+
+.status-badge.en-curso {
+  background-color: rgba(255, 193, 7, 0.8); /* Naranja  transparente */
+}
+
+.status-badge.sin-iniciar {
+  background-color: rgba(108, 117, 125, 0.8); /* Gris  transparente */
+}
+
+/* Añadir margen derecho a la columna Descripción */
+.table td:nth-child(2) {
+  padding-right: 2rem; /* Ajusta este valor según sea necesario */
 }

@@ -20,6 +20,7 @@
                         <tr>
                           <th class="text-dark font-medium fs-4">Tecnología</th>
                           <th class="text-dark font-medium fs-4">Descripción</th>
+                          <th class="text-dark font-medium fs-4">Estado</th>
                           <th class="text-dark font-medium fs-4">Acceso</th>
                         </tr>
                       </thead>
@@ -27,6 +28,13 @@
                         <tr *ngFor="let resource of frontendResources">
                           <td class="fs-4 resource-name">{{ resource.name }}</td>
                           <td class="fs-4">{{ resource.description }}</td>
+                          <td>
+                            <span class="status-badge" [ngClass]="{
+                              'completado': resource.status === 'Completado',
+                              'en-curso': resource.status === 'En curso',
+                              'sin-iniciar': resource.status === 'Sin iniciar'
+                            }">{{ resource.status }}</span>
+                          </td>
                           <td><a href="{{ resource.resourceLink }}" class="custom-link">Recursos Disponibles</a></td>
                         </tr>
                       </tbody>
