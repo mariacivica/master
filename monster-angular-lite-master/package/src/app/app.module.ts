@@ -18,10 +18,10 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { Approutes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
-import { AnalisisDatosComponent } from './dashboard/dashboard-components/blog-cards/analisis-datos/analisis-datos.component';
-import { IngenieriaDatosComponent } from './dashboard/dashboard-components/blog-cards/ingenieria-datos/ingenieria-datos.component';
+import { AnalisisDatosComponent } from './dashboard/dashboard-components/blog-cards/4-h-bi/analisis-datos.component';
+import { IngenieriaDatosComponent } from './dashboard/dashboard-components/blog-cards/7-h-plataformas-datos/ingenieria-datos.component';
 import { FrontComponent } from './dashboard/dashboard-components/blog-cards/2-front/front.component';
-import { BackComponent } from './dashboard/dashboard-components/blog-cards/back/back.component';
+import { BackComponent } from './dashboard/dashboard-components/blog-cards/3-back/back.component';
 
 @NgModule({
   declarations: [

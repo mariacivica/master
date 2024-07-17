@@ -7,8 +7,8 @@ import { DashboardComponent } from "./dashboard.component";
 import { TopSellingComponent } from "./dashboard-components/top-selling/top-selling.component";
 import { TopCardsComponent } from "./dashboard-components/top-cards/top-cards.component";
 import { BlogCardsComponent } from "./dashboard-components/blog-cards/blog-cards.component";
-import { IngenieriaDatosComponent } from './dashboard-components/blog-cards/ingenieria-datos/ingenieria-datos.component';
-import { AnalisisDatosComponent } from './dashboard-components/blog-cards/analisis-datos/analisis-datos.component';
+import { IngenieriaDatosComponent } from './dashboard-components/blog-cards/7-h-plataformas-datos/ingenieria-datos.component';
+import { AnalisisDatosComponent } from './dashboard-components/blog-cards/4-h-bi/analisis-datos.component';
 import { FrontComponent } from "./dashboard-components/blog-cards/2-front/front.component";
 
 const routes: Routes = [
