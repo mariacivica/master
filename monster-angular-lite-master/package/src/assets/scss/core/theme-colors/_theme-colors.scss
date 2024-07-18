@@ -1,4 +1,3 @@
-// Theme colors
 #main-wrapper {
   &[data-layout="vertical"]{
     /*This is for the logo bg*/
@@ -35,9 +34,9 @@
             .sidebar-item {
               &.active {
                 > .sidebar-link {
-                  color: $info;
+                  color: #FF5038; // Cambiado a #FF5038
                   i {
-                    color: $info;
+                    color: #FF5038; // Cambiado a #FF5038
                   }
                 }
               }

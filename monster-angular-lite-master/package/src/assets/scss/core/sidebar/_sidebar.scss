@@ -30,7 +30,7 @@ sidebar navigation
     .sidebar-item {
       width: $sidebar-width-full;
       .sidebar-link {
-        color: $sidebar-text;
+        color: $sidebar-text-dark !important; // color negro por defecto
         padding: $sidebar-link-padding;
         display: flex;
         white-space: nowrap;
@@ -42,20 +42,33 @@ sidebar navigation
           width: 35px;
           line-height: 25px;
           font-size: $sidebar-icon-size;
-          color: $sidebar-icons;
+          color: $sidebar-icons-dark !important; // color negro por defecto para iconos
           display: flex;
           align-items: center;
           justify-content: center;
         }
         &.active,
         &:hover {
+          color: #FF5038 !important;  // Cambia el color del texto del enlace activo y en hover
+          i,
           .feather {
-            color: $white;
+            color: #FF5038 !important;  // Cambia el color del icono dentro del enlace activo y en hover
           }
         }
       }
       &.active > .sidebar-link {
-        /*background: rgba(0, 0, 0, 0.04);*/
+        color: #FF5038 !important;  // Asegúrate de que el texto del enlace activo también cambie de color
+        i,
+        .feather {
+          color: #FF5038 !important;  // Asegúrate de que el icono del enlace activo también cambie de color
+        }
+      }
+      &:not(.active) > .sidebar-link {
+        color: $sidebar-text-dark !important;  // Asegúrate de que el texto del enlace inactivo vuelva a su color predeterminado
+        i,
+        .feather {
+          color: $sidebar-icons-dark !important;  // Asegúrate de que el icono del enlace inactivo vuelva a su color predeterminado
+        }
       }
     }
   }
