@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Product,TopSelling} from './top-selling-data';
+import { Product, TopSelling } from './top-selling-data';
 
 @Component({
   selector: 'app-top-selling',
@@ -7,11 +7,10 @@ import {Product,TopSelling} from './top-selling-data';
 })
 export class TopSellingComponent implements OnInit {
 
-  topSelling:Product[];
+  topSelling: Product[];
 
   constructor() {
-
-    this.topSelling=TopSelling;
+    this.topSelling = TopSelling;
   }
 
   ngOnInit(): void {
