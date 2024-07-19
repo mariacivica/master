@@ -4,8 +4,8 @@ export const ROUTES: RouteInfo[] = [
 
   {
     path: '/dashboard',
-    title: 'Inicio',
-    icon: 'bi bi-speedometer2',
+    title: 'Mi perfil',
+    icon: 'bi bi-person-circle',
     class: '',
     extralink: false,
     submenu: []
@@ -13,7 +13,15 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/recomendaciones',
     title: 'Recomendaciones',
-    icon: 'bi bi-patch-check',
+    icon: 'bi bi-lightbulb',
+    class: '',
+    extralink: false,
+    submenu: []
+  },
+  {
+    path: '/resources',
+    title: 'Recursos',
+    icon: 'bi bi-folder',
     class: '',
     extralink: false,
     submenu: []

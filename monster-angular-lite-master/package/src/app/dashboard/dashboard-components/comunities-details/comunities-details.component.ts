@@ -1,11 +1,11 @@
 // top-cards.component.ts
 import { Component, OnInit } from '@angular/core';
-import { Comunities, comunities } from './comunities-data';
+import { Comunities, comunities } from './comunities-details-data';
 
 @Component({
   selector: 'app-comunities',
-  templateUrl: './comunities.component.html',
-  styleUrls: ['./comunities.component.scss']
+  templateUrl: './comunities-details.component.html',
+  styleUrls: ['./comunities-details.component.scss']
 })
 export class ComunitiesComponent implements OnInit {
   comunities: Comunities[];
