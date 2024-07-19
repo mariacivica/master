@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-body">
     <!-- title -->
-    <h4 class="card-title">Detalles Categorias</h4>
+    <h4 class="card-title">Detalles de las Comunidades</h4>
     <h5 class="card-subtitle">Porcentajes de completado</h5>
 
     <!-- table -->
@@ -16,16 +16,16 @@
         </thead>
 
         <tbody>
-          <tr *ngFor="let topcard of topcards">
+          <tr *ngFor="let comunities of comunities">
             <td class="text-center align-middle">
               <div class="icon-circle bg-gray">
-                <i class="{{topcard.icon}}"></i>
+                <i class="{{comunities.icon}}"></i>
               </div>
             </td>
-            <td class="fs-4 align-middle">{{topcard.subtitle}}</td>
+            <td class="fs-4 align-middle">{{comunities.subtitle}}</td>
             <td class="align-middle">
               <div class="progress mt-1">
-                <div class="progress-bar" [ngClass]="{'bg-green': topcard.percentage > 60, 'bg-yellow': topcard.percentage > 0 && topcard.percentage <= 60, 'bg-gray': topcard.percentage === 0}" role="progressbar" [style.width.%]="topcard.percentage" [attr.aria-valuenow]="topcard.percentage" aria-valuemin="0" aria-valuemax="100">{{topcard.percentage}}%</div>
+                <div class="progress-bar" [ngClass]="{'bg-green': comunities.percentage > 60, 'bg-yellow': comunities.percentage > 0 && comunities.percentage <= 60, 'bg-gray': comunities.percentage === 0}" role="progressbar" [style.width.%]="comunities.percentage" [attr.aria-valuenow]="comunities.percentage" aria-valuemin="0" aria-valuemax="100">{{comunities.percentage}}%</div>
               </div>
             </td>
           </tr>

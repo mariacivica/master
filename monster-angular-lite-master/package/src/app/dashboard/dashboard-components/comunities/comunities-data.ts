@@ -1,4 +1,4 @@
-export interface Topcard {
+export interface Comunities {
   bgcolor: string,
   icon: string,
   title: string,
@@ -6,7 +6,7 @@ export interface Topcard {
   percentage: number
 }
 
-export const topcards: Topcard[] = [
+export const comunities: Comunities[] = [
   { bgcolor: 'success', icon: 'bi bi-code-slash', title: 'Lenguajes de Programación', subtitle: 'Lenguajes de Programación', percentage: 0 },
   { bgcolor: 'warning', icon: 'bi bi-display', title: 'Frameworks Front-End', subtitle: 'Frameworks Front-End', percentage: 20 },
   { bgcolor: 'danger', icon: 'bi bi-server', title: 'Frameworks Back-End', subtitle: 'Frameworks Back-End', percentage: 15 },
