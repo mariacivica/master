@@ -13,7 +13,7 @@ export class BackComponent {
   active = 1;
 
   backendResources = [
-    { name: 'ASP .NET Core', description: 'Framework de Microsoft para aplicaciones web.', resourceLink: '#', status: 'Sin iniciar' },
+    { name: 'ASP .NET Core', description: 'Framework de Microsoft para aplicaciones web.', resourceLink: '#', status: 'Completado' },
     { name: 'Django', description: 'Framework de Python para desarrollo web.', resourceLink: '#', status: 'Sin iniciar' },
     { name: 'Flask', description: 'Micro framework de Python para aplicaciones web.', resourceLink: '#', status: 'Sin iniciar' },
     { name: 'Laravel', description: 'Framework de PHP para aplicaciones web.', resourceLink: '#', status: 'Sin iniciar' },
