@@ -3,7 +3,7 @@ export interface topcard {
   icon: string,
   title: string,
   subtitle: string,
-  percentage: number // Añadir campo para porcentaje
+  percentage: number
 }
 
 export const topcards: topcard[] = [
@@ -12,7 +12,7 @@ export const topcards: topcard[] = [
       icon: 'bi bi-wallet',
       title: 'Lenguajes de Programación',
       subtitle: 'Lenguajes de Programación',
-      percentage: 70
+      percentage: 0
   },
   {
       bgcolor: 'warning',
@@ -40,14 +40,14 @@ export const topcards: topcard[] = [
       icon: 'bi bi-wrench',
       title: 'Herramientas Desarrollo /Devops',
       subtitle: 'Herramientas Desarrollo /Devops',
-      percentage: 50
+      percentage: 0
   },
   {
       bgcolor: 'secondary',
       icon: 'bi bi-gear',
       title: 'Herramientas Transformación Datos',
       subtitle: 'Herramientas Transformación Datos',
-      percentage: 50
+      percentage: 0
   },
   {
       bgcolor: 'success',
@@ -61,27 +61,27 @@ export const topcards: topcard[] = [
       icon: 'bi bi-box',
       title: 'Otras herramientas de Datos',
       subtitle: 'Otras herramientas de Datos',
-      percentage: 60
+      percentage: 0
   },
   {
       bgcolor: 'warning',
       icon: 'bi bi-brain',
       title: 'Herramientas Data Science',
       subtitle: 'Herramientas Data Science',
-      percentage: 75
+      percentage: 0
   },
   {
       bgcolor: 'info',
       icon: 'bi bi-lock',
       title: 'Herramientas Gobierno',
       subtitle: 'Herramientas Gobierno',
-      percentage: 80
+      percentage: 0
   },
   {
       bgcolor: 'primary',
       icon: 'bi bi-cpu',
       title: 'Arquitectura y Habilidades Core',
       subtitle: 'Arquitectura y Habilidades Core',
-      percentage: 85
+      percentage: 0
   },
 ];
