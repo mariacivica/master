@@ -1,5 +1,6 @@
+// top-cards.component.ts
 import { Component, OnInit } from '@angular/core';
-import { topcard, topcards } from './top-cards-data';
+import { Topcard, topcards } from './top-cards-data';
 
 @Component({
   selector: 'app-top-cards',
@@ -7,14 +8,11 @@ import { topcard, topcards } from './top-cards-data';
   styleUrls: ['./top-cards.component.scss']
 })
 export class TopCardsComponent implements OnInit {
-
-  topcards: topcard[];
+  topcards: Topcard[];
 
   constructor() {
     this.topcards = topcards;
   }
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
