@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Product, ScoreSkills } from './score-skills-data';
 
 @Component({
-  selector: 'app-top-selling',
+  selector: 'app-score-skills',
   templateUrl: './score-skills.component.html'
 })
-export class TopSellingComponent implements OnInit {
+export class ScoreSkillsComponent implements OnInit {
 
-  topSelling: Product[];
+  scoreSkills: Product[];
 
   constructor() {
-    this.topSelling = ScoreSkills;
+    this.scoreSkills = ScoreSkills;
   }
 
   ngOnInit(): void {

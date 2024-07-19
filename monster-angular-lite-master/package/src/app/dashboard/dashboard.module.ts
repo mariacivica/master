@@ -5,13 +5,12 @@ import { Routes, RouterModule } from "@angular/router";
 import { NgApexchartsModule } from "ng-apexcharts";
 import { DashboardComponent } from "./dashboard.component";
 import { ProfileComponent } from './dashboard-components/profile/profile.component';
-import { TopSellingComponent } from "./dashboard-components/top-selling/top-selling.component";
 import { ComunitiesComponent } from './dashboard-components/comunities-details/comunities-details.component';
 import { BlogCardsComponent } from "./dashboard-components/blog-cards/blog-cards.component";
 import { IngenieriaDatosComponent } from './dashboard-components/blog-cards/7-h-plataformas-datos/ingenieria-datos.component';
 import { AnalisisDatosComponent } from './dashboard-components/blog-cards/4-h-bi/analisis-datos.component';
 import { FrontComponent } from "./dashboard-components/blog-cards/2-front/front.component";
-import { Profile } from './dashboard-components/profile/profile-data';
+import { ScoreSkillsComponent } from "./dashboard-components/score-skills/score-skills.component";
 
 const routes: Routes = [
   {
@@ -41,9 +40,10 @@ const routes: Routes = [
   declarations: [
     DashboardComponent,
     ProfileComponent,
-    TopSellingComponent,
     BlogCardsComponent,
     ComunitiesComponent,
+    ScoreSkillsComponent,
+
   ],
 })
 export class DashboardModule {}
