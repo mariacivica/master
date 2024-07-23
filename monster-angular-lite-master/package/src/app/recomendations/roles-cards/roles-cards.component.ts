@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 export class RolesCardsComponent implements OnInit {
 
   roleCards: RoleCard[];
+  selectedRole: RoleCard | null = null;
 
   constructor(private router: Router) {
     this.roleCards = roleCards;
@@ -17,7 +18,18 @@ export class RolesCardsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  redirectToPage(route: string): void {
-    this.router.navigate([route]);
+  openModal(roleCard: RoleCard): void {
+    this.selectedRole = roleCard;
+    const modalElement = document.getElementById('roleModal');
+    if (modalElement) {
+      const modal = new (window as any).bootstrap.Modal(modalElement);
+      modal.show();
+    }
+  }
+
+  redirectToPage(route: string | undefined): void {
+    if (route) {
+      this.router.navigate([route]);
+    }
   }
 }
