@@ -3,16 +3,16 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-analisis-datos',
-  templateUrl: './analisis-datos.component.html',
-  styleUrls: ['./analisis-datos.component.css'],
+  selector: 'app-h-bi',
+  templateUrl: './h-bi.component.html',
+  styleUrls: ['./h-bi.component.css'],
   standalone: true,
   imports: [NgbNavModule, CommonModule],
 })
-export class AnalisisDatosComponent {
+export class hBiComponent {
   active = 1;
 
-  analysisResources = [
+  hBiResources = [
     { name: 'MicroStrategy', description: 'Plataforma de análisis y movilidad empresarial.', resourceLink: '#', status: 'Completado' },
     { name: 'Power BI', description: 'Servicio de análisis de negocios de Microsoft.', resourceLink: '#', status: 'En curso' },
     { name: 'Qlik', description: 'Plataforma de análisis de datos y visualización.', resourceLink: '#', status: 'Sin iniciar' },

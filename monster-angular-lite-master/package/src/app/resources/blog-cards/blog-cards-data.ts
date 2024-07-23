@@ -33,7 +33,7 @@ export const blogcards: blogcard[] = [
       subtitle: '',
       subtext: 'Proceso de inspeccionar, limpiar y modelar datos con el objetivo de descubrir información útil, llegar a conclusiones y apoyar la toma de decisiones.',
       image: 'assets/images/bg/bg4.jpg',
-      route: 'analisis-datos'
+      route: 'h-bi'
   },
   {
       title: 'Herramientas Desarrollo/Devops',
@@ -54,7 +54,7 @@ export const blogcards: blogcard[] = [
       subtitle: '',
       subtext: 'Diseño, construcción y gestión de infraestructuras y sistemas que permiten recopilar, almacenar, y procesar grandes volúmenes de datos.',
       image: 'assets/images/bg/bg7.jpg',
-      route: 'ingenieria-datos'
+      route: 'h-plataformas-datos'
   },
   {
       title: 'Otras herramientas de Datos',

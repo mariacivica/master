@@ -13,7 +13,7 @@
               <li [ngbNavItem]="1">
                 <button ngbNavLink>Teoría y ejercicios</button>
                 <ng-template ngbNavContent>
-                  <!-- Modificado para incluir recursos de análisis de datos en una tabla -->
+                  <!-- Modificado para incluir recursos en una tabla -->
                   <div class="table-responsive mt-4">
                     <table class="table align-middle">
                       <thead>
@@ -25,7 +25,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr *ngFor="let resource of analysisResources">
+                        <tr *ngFor="let resource of hBiResources">
                           <td class="fs-4 resource-name">{{ resource.name }}</td>
                           <td class="fs-4">{{ resource.description }}</td>
                           <td>

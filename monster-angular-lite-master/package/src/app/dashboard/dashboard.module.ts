@@ -6,10 +6,6 @@ import { NgApexchartsModule } from "ng-apexcharts";
 import { DashboardComponent } from "./dashboard.component";
 import { ProfileComponent } from './dashboard-components/profile/profile.component';
 import { ComunitiesComponent } from './dashboard-components/comunities-details/comunities-details.component';
-import { BlogCardsComponent } from "./dashboard-components/blog-cards/blog-cards.component";
-import { IngenieriaDatosComponent } from './dashboard-components/blog-cards/7-h-plataformas-datos/ingenieria-datos.component';
-import { AnalisisDatosComponent } from './dashboard-components/blog-cards/4-h-bi/analisis-datos.component';
-import { FrontComponent } from "./dashboard-components/blog-cards/2-front/front.component";
 import { ScoreSkillsComponent } from "./dashboard-components/score-skills/score-skills.component";
 
 const routes: Routes = [
@@ -21,10 +17,6 @@ const routes: Routes = [
     },
     component: DashboardComponent,
     children: [
-      { path: 'ingenieria-datos', component: IngenieriaDatosComponent },
-      { path: 'analisis-datos', component: AnalisisDatosComponent },
-      { path: 'front', component: FrontComponent }
-
     ]
   },
 ];
@@ -40,7 +32,6 @@ const routes: Routes = [
   declarations: [
     DashboardComponent,
     ProfileComponent,
-    BlogCardsComponent,
     ComunitiesComponent,
     ScoreSkillsComponent,
 

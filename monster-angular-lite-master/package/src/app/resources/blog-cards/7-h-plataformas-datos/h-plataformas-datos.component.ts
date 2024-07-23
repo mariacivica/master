@@ -3,13 +3,13 @@ import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-ingenieria-datos',
-  templateUrl: './ingenieria-datos.component.html',
-  styleUrls: ['./ingenieria-datos.component.css'],
+  selector: 'app-h-plataformas-datos',
+  templateUrl: './h-plataformas-datos.component.html',
+  styleUrls: ['./h-plataformas-datos.component.css'],
   standalone: true,
   imports: [NgbNavModule, CommonModule],
 })
-export class IngenieriaDatosComponent {
+export class hPlataformasDatosComponent  {
   active = 1;
 
   platforms = [
