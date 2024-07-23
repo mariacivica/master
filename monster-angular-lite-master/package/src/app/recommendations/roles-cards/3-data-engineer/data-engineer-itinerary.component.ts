@@ -40,7 +40,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-data-engineer-itinerary',
   templateUrl: './data-engineer-itinerary.component.html',
-  styleUrls: ['./data-engineer-itinerary.component.css'],
+
 })
 export class DataEngineerItineraryComponent {
   // Aquí puedes añadir lógica adicional si es necesario

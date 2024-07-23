@@ -27,7 +27,7 @@ export const Approutes: Routes = [
       },
       {
         path: 'recommendations',
-        loadChildren: () => import('./recomendations/recommendations.module').then(m => m.RecommendationsModule)
+        loadChildren: () => import('./recommendations/recommendations.module').then(m => m.RecommendationsModule)
       },
       {
         path: 'resources',
