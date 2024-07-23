@@ -26,7 +26,7 @@ export const roleCards: RoleCard[] = [
     subtitle: '',
     subtext: 'Construcción y mantenimiento de infraestructuras de datos escalables y eficientes.',
     icon: 'bi-cpu',
-    route: 'data-engineer'
+    route: 'data-engineer-itinerary'
   },
   {
     title: 'Project Management',

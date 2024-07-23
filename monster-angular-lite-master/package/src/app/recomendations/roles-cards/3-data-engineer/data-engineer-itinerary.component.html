@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="mt-4 mb-4">Itinerario de Data Engineer</h2>
+  <div class="row">
+    <div class="col-12 mb-4">
+      <p>Para convertirte en un Data Engineer, te recomendamos seguir el siguiente itinerario de aprendizaje, comenzando con los fundamentos y avanzando hacia tecnologías más complejas y específicas.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let tech of technologies">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{tech.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{tech.category}}</h6>
+          <p class="card-text">{{tech.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
