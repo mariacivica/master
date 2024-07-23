@@ -26,8 +26,8 @@ export const Approutes: Routes = [
         loadChildren: () => import('./component/component.module').then(m => m.ComponentsModule)
       },
       {
-        path: 'suggestion',
-        loadChildren: () => import('./suggestion/suggestion.module').then(m => m.SuggestionModule)
+        path: 'recommendations',
+        loadChildren: () => import('./recomendations/recommendations.module').then(m => m.RecommendationsModule)
       },
       {
         path: 'resources',

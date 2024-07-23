@@ -11,9 +11,9 @@ export const ROUTES: RouteInfo[] = [
     submenu: []
   },
   {
-    path: '/suggestion',
+    path: '/recommendations',
     title: 'Recomendaciones',
-    icon: 'bi bi-lightbulb',
+    icon: 'bi bi-briefcase',
     class: '',
     extralink: false,
     submenu: []
