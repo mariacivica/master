@@ -2,71 +2,103 @@ h2 {
   color: #2c3e50;
 }
 
-/* Nuevo estilo para los enlaces personalizados */
 .custom-link {
   font-weight: bold;
   color: #FF5038;
-  text-decoration: none; /* Quita el subrayado del enlace */
+  text-decoration: none;
 }
 
 .custom-link:hover {
   font-weight: bold;
   color: #FFAD32;
-  text-decoration: underline; /* Añade subrayado al pasar el mouse */
+  text-decoration: underline;
 }
 
-/* Estilo para resaltar el nombre del recurso */
 .resource-name {
-  font-weight: bold; /* Texto en negrita */
-  color: #333333; /* Color del texto */
+  font-weight: bold;
+  color: #333333;
 }
 
-/* Estilos para las pestañas activas */
 .nav-tabs .nav-link.active {
-  color: #FF5038; /* Cambia el color del texto de la pestaña activa */
-  border-color: #FF5038 #FF5038 #fff; /* Ajusta los bordes de la pestaña activa */
-  background-color: #fff; /* Fondo blanco para la pestaña activa */
+  color: #FF5038;
+  border-color: #FF5038 #FF5038 #fff;
+  background-color: #fff;
 }
 
 .nav-tabs .nav-link {
-  color: #2c3e50; /* Color del texto de las pestañas inactivas */
+  color: #2c3e50;
 }
 
-/* Estilo para resaltar el título "Backend" */
 .card-title {
-  font-size: 2rem; /* Aumenta el tamaño de la fuente */
-  color: #FF5038; /* Cambia el color del texto */
-  font-weight: bold; /* Pone el texto en negrita */
-  border-bottom: 2px solid #FF5038; /* Añade un borde inferior */
-  padding-bottom: 0.5rem; /* Añade un espaciado inferior */
-  margin-bottom: 1rem; /* Añade un margen inferior */
+  font-size: 2rem;
+  color: #FF5038;
+  font-weight: bold;
+  border-bottom: 2px solid #FF5038;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-/* Estilos para los estados */
 .status-badge {
   display: inline-block;
-  width: 110px; /* Ancho fijo para todos los estados */
+  width: 110px;
   padding: 0.5rem;
   font-size: 1rem;
   color: #fff;
   border-radius: 0.25rem;
   text-align: center;
-  opacity: 0.8; /* Más transparencia */
+  opacity: 0.8;
 }
 
 .status-badge.completado {
-  background-color: rgba(40, 167, 69, 0.8); /* Verde  transparente */
+  background-color: rgba(40, 167, 69, 0.8);
 }
 
 .status-badge.en-curso {
-  background-color: rgba(255, 193, 7, 0.8); /* Naranja  transparente */
+  background-color: rgba(255, 193, 7, 0.8);
 }
 
 .status-badge.sin-iniciar {
-  background-color: rgba(108, 117, 125, 0.8); /* Gris  transparente */
+  background-color: rgba(108, 117, 125, 0.8);
 }
 
-/* Añadir margen derecho a la columna Descripción */
 .table td:nth-child(2) {
-  padding-right: 2rem; /* Ajusta este valor según sea necesario */
+  padding-right: 2rem;
+}
+
+.test-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.test-button-coral {
+  background-color: #FF5038;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.test-button-coral:hover {
+  background-color: #FFAD32;
+}
+
+.test-button-grey {
+  background-color: #ccc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
 }

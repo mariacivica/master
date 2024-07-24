@@ -2,12 +2,10 @@
   <div class="card-body">
     <!-- title -->
     <h4 class="card-title">Plataformas de datos</h4>
-
     <div class="row mt-1">
       <div class="col-md-12">
         <div class="card">
-          <div class="p-3">
-          </div>
+          <div class="p-3"></div>
           <div class="card-body border-top">
             <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
               <li [ngbNavItem]="1">
@@ -45,13 +43,38 @@
               <li [ngbNavItem]="2">
                 <button ngbNavLink>Test de Competencias</button>
                 <ng-template ngbNavContent>
-                  <p>Aquí va el contenido del Test de Competencias.</p>
+                  <h5 class="mt-4">Test Disponibles</h5>
+                  <div class="test-buttons mt-3">
+                    <button *ngFor="let platform of platforms"
+                            [ngClass]="{'test-button-coral': platform.status !== 'Completado', 'test-button-grey': platform.status === 'Completado'}"
+                            (click)="takeTest(platform)">
+                      Test {{ platform.name }}
+                    </button>
+                  </div>
                 </ng-template>
               </li>
             </ul>
             <div [ngbNavOutlet]="nav" class="mt-2"></div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="testModalLabel">Test</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {{ modalMessage }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" style="background-color: #FF5038; border-color: #FF5038;" data-bs-dismiss="modal">Aceptar</button>
       </div>
     </div>
   </div>

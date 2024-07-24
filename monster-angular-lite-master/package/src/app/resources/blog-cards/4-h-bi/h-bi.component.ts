@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class hBiComponent {
   active = 1;
+  modalMessage = '';
 
   hBiResources = [
     { name: 'MicroStrategy', description: 'Plataforma de análisis y movilidad empresarial.', resourceLink: '#', status: 'Completado' },
@@ -30,4 +31,17 @@ export class hBiComponent {
     { name: 'TIBCO Webfocus', description: 'Plataforma de inteligencia empresarial y analítica.', resourceLink: '#', status: 'Sin iniciar' },
     { name: 'TIBCO Spotfire', description: 'Plataforma de análisis de datos y visualización de TIBCO.', resourceLink: '#', status: 'Sin iniciar' },
   ];
+
+  takeTest(resource: { name: string; status: string }): void {
+    if (resource.status === 'Completado') {
+      this.modalMessage = `El test de ${resource.name} ya ha sido superado, no se puede realizar de nuevo.`;
+    } else {
+      this.modalMessage = `Iniciar el test para ${resource.name}`;
+    }
+    const modalElement = document.getElementById('testModal');
+    if (modalElement) {
+      const modal = new (window as any).bootstrap.Modal(modalElement);
+      modal.show();
+    }
+  }
 }

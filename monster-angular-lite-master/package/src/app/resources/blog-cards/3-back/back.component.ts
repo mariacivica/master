@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class BackComponent {
   active = 1;
+  modalMessage = '';
 
   backendResources = [
     { name: 'ASP .NET Core', description: 'Framework de Microsoft para aplicaciones web.', resourceLink: '#', status: 'Completado' },
@@ -23,4 +24,17 @@ export class BackComponent {
     { name: 'Play', description: 'Framework para aplicaciones web en Scala y Java.', resourceLink: '#', status: 'Sin iniciar' },
     { name: 'Express.js', description: 'Framework minimalista para Node.js.', resourceLink: '#', status: 'Sin iniciar' }
   ];
+
+  takeTest(resource: { name: string; status: string }): void {
+    if (resource.status === 'Completado') {
+      this.modalMessage = `El test de ${resource.name} ya ha sido superado, no se puede realizar de nuevo.`;
+    } else {
+      this.modalMessage = `Iniciar el test para ${resource.name}`;
+    }
+    const modalElement = document.getElementById('testModal');
+    if (modalElement) {
+      const modal = new (window as any).bootstrap.Modal(modalElement);
+      modal.show();
+    }
+  }
 }

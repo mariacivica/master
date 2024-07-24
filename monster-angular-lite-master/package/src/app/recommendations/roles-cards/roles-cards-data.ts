@@ -29,7 +29,7 @@ export const roleCards: RoleCard[] = [
     route: 'data-engineer-itinerary'
   },
   {
-    title: 'Project Management',
+    title: 'Project Manager',
     subtitle: '',
     subtext: 'Planificación, ejecución y supervisión de proyectos, asegurando el cumplimiento de plazos y objetivos.',
     icon: 'bi-clipboard-data',

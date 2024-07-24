@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class hPlataformasDatosComponent  {
   active = 1;
+  modalMessage = '';
 
   platforms = [
     { name: 'Snowflake', description: 'Plataforma de almacenamiento y análisis en la nube.', resourceLink: '#', status: 'Completado' },
@@ -39,4 +40,17 @@ export class hPlataformasDatosComponent  {
     { name: 'Redis', description: 'Almacenamiento en memoria para bases de datos y caché.', resourceLink: '#', status: 'Sin iniciar' },
     { name: 'Splunk', description: 'Plataforma de análisis de datos generados por máquinas.', resourceLink: '#', status: 'Sin iniciar' }
   ];
+
+  takeTest(platform: { name: string; status: string }): void {
+    if (platform.status === 'Completado') {
+      this.modalMessage = `El test de ${platform.name} ya ha sido superado, no se puede realizar de nuevo.`;
+    } else {
+      this.modalMessage = `Iniciar el test para ${platform.name}`;
+    }
+    const modalElement = document.getElementById('testModal');
+    if (modalElement) {
+      const modal = new (window as any).bootstrap.Modal(modalElement);
+      modal.show();
+    }
+  }
 }
