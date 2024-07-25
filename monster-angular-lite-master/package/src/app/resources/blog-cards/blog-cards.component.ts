@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { blogcard, blogcards } from './blog-cards-data';
+import { BlogCard, blogCards } from './blog-cards-data';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,10 +8,10 @@ import { Router } from '@angular/router';
 })
 export class BlogCardsComponent implements OnInit {
 
-  blogcards: blogcard[];
+  blogcards: BlogCard[];
 
   constructor(private router: Router) {
-    this.blogcards = blogcards;
+    this.blogcards = blogCards;
   }
 
   ngOnInit(): void {
