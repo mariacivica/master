@@ -9,36 +9,17 @@
       <div class="col-md-6 col-lg-3 mb-4" *ngFor='let roleCard of roleCards'>
         <div class="card h-100 text-center">
           <div class="d-flex justify-content-center mt-3">
-            <i [class]="'bi ' + roleCard.icon" style="font-size: 3rem; color: #333;"></i>
+            <i [class]="'bi ' + roleCard.icon" style="font-size: 3rem; color: #FF5038;"></i>
           </div>
           <div class="card-body d-flex flex-column justify-content-between">
             <div>
-              <h4 class="card-title mt-2" style="cursor: pointer;" (click)="openModal(roleCard)">{{roleCard.title}}</h4>
+              <h4 class="card-title mt-2">{{roleCard.title}}</h4>
               <h6 class="card-subtitle mb-2 text-muted">{{roleCard.subtitle}}</h6>
               <p class="card-text">{{roleCard.subtext}}</p>
             </div>
             <button type="button" class="btn btn-primary mt-auto" (click)="redirectToPage(roleCard.route)" style="background-color: #FF5038; border-color: #FF5038;">Acceder</button>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="roleModal" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="roleModalLabel">{{selectedRole?.title}}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>{{selectedRole?.subtext}}</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" (click)="redirectToPage(selectedRole?.route)">Acceder</button>
       </div>
     </div>
   </div>

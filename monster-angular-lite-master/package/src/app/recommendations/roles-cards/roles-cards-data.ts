@@ -11,7 +11,7 @@ export const roleCards: RoleCard[] = [
     title: 'Data Architect',
     subtitle: '',
     subtext: 'Diseño y gestión de la arquitectura de datos, asegurando la integración y calidad de los datos.',
-    icon: 'bi-diagram-3',
+    icon: 'bi-diagram-2',
     route: 'data-architect'
   },
   {
@@ -25,14 +25,14 @@ export const roleCards: RoleCard[] = [
     title: 'Data Engineer',
     subtitle: '',
     subtext: 'Construcción y mantenimiento de infraestructuras de datos escalables y eficientes.',
-    icon: 'bi-cpu',
+    icon: 'bi-hdd-network',
     route: 'data-engineer-itinerary'
   },
   {
     title: 'Project Manager',
     subtitle: '',
     subtext: 'Planificación, ejecución y supervisión de proyectos, asegurando el cumplimiento de plazos y objetivos.',
-    icon: 'bi-clipboard-data',
+    icon: 'bi-clipboard-check',
     route: 'project-management'
   }
 ];
