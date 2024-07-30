@@ -9,6 +9,7 @@ interface Message {
   date: Date;
   content: string;
   category: string;
+  type: string; // Añadido para diferenciar tipos de mensajes
 }
 
 @Component({
@@ -21,6 +22,7 @@ export class InboxComponent implements OnInit {
   filteredMessages: Message[] = [];
   activeTab = 1;
   selectedMessage?: Message;
+  modalTitle: string = ''; // Añadir esta variable para el título del modal
 
   constructor(private modalService: NgbModal) {}
 
@@ -30,14 +32,26 @@ export class InboxComponent implements OnInit {
   }
 
   loadMessages(): void {
-    this.messages = ScoreSkills.map((skill: Product, index: number) => ({
-      id: index + 1,
-      subject: `Has superado la tecnología ${skill.productName}`,
-      sender: 'admin@ejemplo.com',
-      date: new Date(skill.testDate),
-      content: `Se ha superado la tecnología ${skill.productName} con una puntuación de ${skill.testScore}`,
-      category: 'General'
-    }));
+    this.messages = [
+      ...ScoreSkills.map((skill: Product, index: number) => ({
+        id: index + 1,
+        subject: `Has superado la tecnología ${skill.productName}`,
+        sender: 'admin@ejemplo.com',
+        date: new Date(skill.testDate),
+        content: `Se ha superado la tecnología ${skill.productName} con una puntuación de ${skill.testScore}`,
+        category: 'General',
+        type: 'achievement' // Tipo de mensaje: logro
+      })),
+      {
+        id: ScoreSkills.length + 1,
+        subject: 'Nueva tecnología añadida',
+        sender: 'admin@ejemplo.com',
+        date: new Date(),
+        content: `Se ha añadido la tecnología Svelte a la comunidad de Frameworks Front-End`,
+        category: 'General',
+        type: 'announcement' // Tipo de mensaje: anuncio
+      }
+    ];
 
     // Ordenar los mensajes por fecha de manera descendente (más reciente primero)
     this.messages.sort((a, b) => b.date.getTime() - a.date.getTime());
@@ -57,6 +71,7 @@ export class InboxComponent implements OnInit {
 
   openMessage(content: any, message: Message): void {
     this.selectedMessage = message;
+    this.modalTitle = message.type === 'achievement' ? '¡Enhorabuena!' : 'Aviso';
     this.modalService.open(content, { centered: true });
   }
 }
