@@ -1,0 +1,30 @@
+/* Estilos para el componente de la bandeja de entrada */
+.card {
+  margin-top: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.nav-tabs .nav-link {
+  color: #FF5038; /* Cambia el color del texto de las pestañas */
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #f8f9fa;
+  color: #FF5038; /* Cambia el color del texto de la pestaña activa */
+  border-color: #FF5038; /* Cambia el color del borde de la pestaña activa */
+}
+
+.bi-award-fill {
+  color: #6c757d; /* Color gris para el icono de la medalla */
+}

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { FullComponent } from './layouts/full/full.component';
+import { InboxComponent } from './inbox/inbox.component';
 
 export const Approutes: Routes = [
   {
@@ -46,7 +47,12 @@ export const Approutes: Routes = [
         loadComponent: () => import('./resources/blog-cards/2-front/front.component').then(m => m.FrontComponent)
       },
       { path: 'back',
-        loadComponent: () => import('./resources/blog-cards/3-back/back.component').then(m => m.BackComponent) },
+        loadComponent: () => import('./resources/blog-cards/3-back/back.component').then(m => m.BackComponent)
+      },
+      {
+        path: 'inbox',
+        component: InboxComponent
+      }
     ]
   },
   {

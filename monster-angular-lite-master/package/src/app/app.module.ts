@@ -18,11 +18,13 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { Approutes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
+import { InboxComponent } from './inbox/inbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SpinnerComponent,
+    InboxComponent
   ],
   imports: [
     CommonModule,
