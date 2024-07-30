@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { FullComponent } from './layouts/full/full.component';
 import { InboxComponent } from './inbox/inbox.component';
+import { LogoutComponent } from './logout/logout.component';
+
 
 export const Approutes: Routes = [
   {
@@ -52,7 +54,12 @@ export const Approutes: Routes = [
       {
         path: 'inbox',
         component: InboxComponent
+      },
+      {
+        path: 'logout',
+        component: LogoutComponent
       }
+
     ]
   },
   {

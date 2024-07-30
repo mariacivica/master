@@ -19,12 +19,14 @@ import { Approutes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
 import { InboxComponent } from './inbox/inbox.component';
+import {LogoutComponent} from './logout/logout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SpinnerComponent,
-    InboxComponent
+    InboxComponent,
+    LogoutComponent
   ],
   imports: [
     CommonModule,
