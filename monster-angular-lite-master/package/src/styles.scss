@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+.custom-primary {
+  background-color: #FF5038 !important;
+  border-color: #FF5038 !important;
+  color: white !important;
+}
+
+.custom-secondary {
+  background-color: #333333 !important;
+  border-color: #333333 !important;
+  color: white !important;
+}
+
+.custom-primary:hover {
+  background-color: darken(#FF5038, 10%) !important;
+  border-color: darken(#FF5038, 10%) !important;
+}
+
+.custom-secondary:hover {
+  background-color: lighten(#333333, 10%) !important;
+  border-color: lighten(#333333, 10%) !important;
+}

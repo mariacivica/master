@@ -1,0 +1,21 @@
+/* Cambiar el color del botón primario del modal */
+.btn-primary.custom-primary {
+  background-color: #FF5038;
+  border-color: #FF5038;
+}
+
+.btn-primary.custom-primary:hover, .btn-primary.custom-primary:focus {
+  background-color: #FF5038;
+  border-color: #FF5038;
+}
+
+/* Cambiar el color del botón secundario del modal */
+.btn-secondary.custom-secondary {
+  background-color: #333333;
+  border-color: #333333;
+}
+
+.btn-secondary.custom-secondary:hover, .btn-secondary.custom-secondary:focus {
+  background-color: #333333;
+  border-color: #333333;
+}

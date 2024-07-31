@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { FullComponent } from './layouts/full/full.component';
+import { LoginComponent } from './login/login.component';
 import { InboxComponent } from './inbox/inbox.component';
-import { LogoutComponent } from './logout/logout.component';
 
-
-export const Approutes: Routes = [
+const routes: Routes = [
+  { path: 'login', component: LoginComponent }, // Ruta para el login independiente
   {
     path: '',
     component: FullComponent,
@@ -54,22 +54,14 @@ export const Approutes: Routes = [
       {
         path: 'inbox',
         component: InboxComponent
-      },
-      {
-        path: 'logout',
-        component: LogoutComponent
       }
-
     ]
   },
-  {
-    path: '**',
-    redirectTo: '/starter'
-  }
+  { path: '**', redirectTo: '/homepage' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(Approutes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

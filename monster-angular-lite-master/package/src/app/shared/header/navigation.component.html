@@ -24,6 +24,7 @@
       data-toggle="dropdown"
       aria-haspopup="true"
       aria-expanded="false"
+      style="cursor: pointer;"
     >
       <img
         src="assets/images/users/user1.jpg"
@@ -37,7 +38,7 @@
       <a class="dropdown-item" href="/dashboard"> Mi perfil</a>
       <a class="dropdown-item" href="/inbox"> Bandeja de entrada</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" (click)="logout()"> Cerrar sesión</a>
+      <a class="dropdown-item" href="javascript:void(0)" (click)="openLogoutModal()"> Cerrar sesión</a>
     </div>
   </li>
 </ul>
