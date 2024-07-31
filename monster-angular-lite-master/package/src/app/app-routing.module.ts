@@ -11,7 +11,7 @@ const routes: Routes = [
     path: '',
     component: FullComponent,
     children: [
-      { path: '', redirectTo: '/homepage', pathMatch: 'full' },
+      { path: '', redirectTo: '/login', pathMatch: 'full' },
       {
         path: 'homepage',
         loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)
