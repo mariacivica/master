@@ -6,6 +6,7 @@
   height: 100vh;
   background-color: #f8f9fa;
   padding-top: 20px; /* Ajustar el padding superior si es necesario */
+  font-family: 'Montserrat', sans-serif; /* Asegurar que toda la página use la misma fuente */
 }
 
 .welcome-text {
@@ -14,6 +15,7 @@
   margin-bottom: 20px;
   opacity: 0;
   animation: fadeIn 2s 0.5s forwards; /* Animación de entrada con delay */
+  font-family: 'Montserrat', sans-serif; /* Usar la misma fuente para el texto de bienvenida */
 }
 
 .homepage-boxes {
@@ -24,6 +26,9 @@
 }
 
 .homepage-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   padding: 40px;
   border-radius: 8px;
@@ -35,9 +40,10 @@
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: background-color 0.3s ease; /* Añadir transición para el cambio de color */
   opacity: 0;
   animation: fadeInLeft 1s forwards; /* Animación de aparición desde la izquierda */
+  font-family: 'Montserrat', sans-serif; /* Usar la misma fuente para las cajas */
 }
 
 .homepage-box:nth-child(1) {
@@ -49,21 +55,23 @@
 }
 
 .homepage-box:nth-child(3) {
-  animation-delay: 2s; /* Retardo para el tercer cuadro */
+  animation-delay: 2s;
 }
 
 .homepage-box:nth-child(4) {
-  animation-delay: 2.5s; /* Retardo para el cuarto cuadro */
+  animation-delay: 2.5s;
 }
 
 .homepage-box:hover {
-  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+  background-color: #FFAD32;
+  color: #fff;
 }
 
 .news {
   width: 90%;
   opacity: 0;
-  animation: fadeIn 2s 3s forwards; /* Animación de entrada con delay */
+  animation: fadeIn 2s 3s forwards;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .news h2 {
@@ -80,6 +88,7 @@
   margin: 10px 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes fadeIn {
@@ -91,7 +100,7 @@
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateX(-50px); /* Animación desde la izquierda */
+    transform: translateX(-50px);
   }
   to {
     opacity: 1;

@@ -12,7 +12,7 @@ export const ROUTES: RouteInfo[] = [
   },
   {
     path: '/recommendations',
-    title: 'Recomendaciones',
+    title: 'Itinerarios',
     icon: 'bi bi-briefcase',
     class: '',
     extralink: false,
