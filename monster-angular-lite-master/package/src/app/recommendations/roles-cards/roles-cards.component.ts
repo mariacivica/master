@@ -17,9 +17,7 @@ export class RolesCardsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  redirectToPage(route: string | undefined): void {
-    if (route) {
-      this.router.navigate([route]);
-    }
+  redirectToPage(route: string): void {
+    this.router.navigate([route]);
   }
 }
