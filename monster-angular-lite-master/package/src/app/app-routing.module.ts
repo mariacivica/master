@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 import { FullComponent } from './layouts/full/full.component';
-import { LoginComponent } from './login/login.component';
 import { InboxComponent } from './inbox/inbox.component';
+import { LoginComponent } from './login/login.component';
 
-const routes: Routes = [
-  { path: 'login', component: LoginComponent }, // Ruta para el login independiente
+import { HomepageComponent } from './homepage/homepage.component';
+
+
+export const Approutes: Routes = [
+  { path: 'login', component: LoginComponent },
   {
     path: '',
     component: FullComponent,
@@ -14,7 +17,7 @@ const routes: Routes = [
       { path: '', redirectTo: '/login', pathMatch: 'full' },
       {
         path: 'homepage',
-        loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)
+        component: HomepageComponent
       },
       {
         path: 'dashboard',
@@ -54,14 +57,18 @@ const routes: Routes = [
       {
         path: 'inbox',
         component: InboxComponent
-      }
+      },
+
     ]
   },
-  { path: '**', redirectTo: '/homepage' }
+  {
+    path: '**',
+    redirectTo: '/login'
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(Approutes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

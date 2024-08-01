@@ -19,6 +19,7 @@ export class LoginComponent {
     const password = passwordInput?.value;
 
     if (email === 'maria.gonzalez@civica-soft.com' && password === 'civicampus') {
+      localStorage.setItem('user', 'authenticated');
       this.router.navigate(['/homepage']);
     } else {
       this.modalService.open(InvalidCredentialsModalContent);
@@ -39,7 +40,13 @@ export class LoginComponent {
     <div class="modal-footer">
       <button type="button" class="btn btn-primary custom-primary" (click)="close()">Aceptar</button>
     </div>
-  `
+  `,
+  styles: [`
+    .btn-primary {
+      background-color: #FF5038;
+      border-color: #FF5038;
+    }
+  `]
 })
 export class InvalidCredentialsModalContent {
   constructor(public activeModal: NgbActiveModal) {}
