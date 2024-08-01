@@ -1,66 +1,75 @@
 .homepage-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Cambiar de center a flex-start para mover los cuadros hacia arriba */
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding-top: 20px; /* Ajustar el padding superior si es necesario */
 }
 
-.banner {
-  position: relative;
-  text-align: center;
+.welcome-text {
+  font-size: 32px;
+  font-weight: bold;
   margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 2s 0.5s forwards; /* Animación de entrada con delay */
 }
 
-.banner-img {
-  width: 100%;
-  height: auto;
+.homepage-boxes {
+  display: flex;
+  justify-content: space-between; /* Ajustar para mejor separación */
+  width: 90%; /* Ajustar el ancho del contenedor de los cuadros */
+  margin-bottom: 40px;
 }
 
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2.5em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
-
-.background {
-  background-image: url('/assets/images/homepage/fondo-homepage.png');
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  min-height: 500px;
-}
-
-.content {
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.description {
+.homepage-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 15px; /* Ajustar margen horizontal entre los cuadros */
+  width: 20%;
+  height: 150px; /* Incrementar la altura de los cuadros */
   text-align: center;
-  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+  opacity: 0;
+  animation: fadeInLeft 1s forwards; /* Animación de aparición desde la izquierda */
 }
 
-.description h2 {
-  font-family: 'Montserrat', sans-serif;
+.homepage-box:nth-child(1) {
+  animation-delay: 1s; /* Retardo para el primer cuadro */
 }
 
-.description p {
-  font-family: 'Lato', sans-serif;
+.homepage-box:nth-child(2) {
+  animation-delay: 1.5s; /* Retardo para el segundo cuadro */
+}
+
+.homepage-box:nth-child(3) {
+  animation-delay: 2s; /* Retardo para el tercer cuadro */
+}
+
+.homepage-box:nth-child(4) {
+  animation-delay: 2.5s; /* Retardo para el cuarto cuadro */
+}
+
+.homepage-box:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
 }
 
 .news {
-  margin-top: 20px;
+  width: 90%;
+  opacity: 0;
+  animation: fadeIn 2s 3s forwards; /* Animación de entrada con delay */
 }
 
 .news h2 {
-  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .news-item {
@@ -70,12 +79,22 @@
   padding: 15px;
   margin: 10px 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 16px;
 }
 
-.news-item p {
-  font-family: 'Lato', sans-serif;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
-.news-item h3 {
-  font-family: 'Montserrat', sans-serif;
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Animación desde la izquierda */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
