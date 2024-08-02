@@ -1,12 +1,12 @@
 .homepage-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Cambiar de center a flex-start para mover los cuadros hacia arriba */
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
-  background-color: #f8f9fa;
-  padding-top: 20px; /* Ajustar el padding superior si es necesario */
-  font-family: 'Montserrat', sans-serif; /* Asegurar que toda la página use la misma fuente */
+  background-color: #ffffff; /* Cambiar a blanco */
+  padding-top: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .welcome-text {
