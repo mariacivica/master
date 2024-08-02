@@ -5,6 +5,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { RecommendationsComponent } from "./recommendations.component";
 import { RolesCardsComponent } from './roles-cards/roles-cards.component';
 import { DataEngineerComponent } from './roles-cards/3-data-engineer/data-engineer.component';
+import { RoleNotDefinedModalComponent } from './roles-cards/role-not-defined-modal.component'; // Corregir la importación
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
     path: 'data-engineer',
     component: DataEngineerComponent
   }
+
 ];
 
 @NgModule({
@@ -30,7 +32,8 @@ const routes: Routes = [
   declarations: [
     RecommendationsComponent,
     RolesCardsComponent,
-    DataEngineerComponent
+    DataEngineerComponent,
+    RoleNotDefinedModalComponent
   ],
 })
 export class RecommendationsModule {}

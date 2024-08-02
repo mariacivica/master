@@ -1,0 +1,72 @@
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #FF5038;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #FF5038;
+  margin-bottom: 20px;
+}
+
+.objective {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.itinerary {
+  margin-bottom: 40px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  background-color: #fff;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table td ul {
+  padding-left: 20px;
+}
+
+.table td ul li {
+  list-style-type: disc;
+}
+
+.fixed-table {
+  table-layout: fixed;
+}
+
+.fixed-table th, .fixed-table td {
+  word-wrap: break-word;
+}

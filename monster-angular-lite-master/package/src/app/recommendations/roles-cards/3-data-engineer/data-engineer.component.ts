@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-data-engineer',
   templateUrl: './data-engineer.component.html',
+  styleUrls: ['./data-engineer.component.css']
 })
 export class DataEngineerComponent {
-  // Aquí puedes añadir lógica adicional si es necesario
+
 }
