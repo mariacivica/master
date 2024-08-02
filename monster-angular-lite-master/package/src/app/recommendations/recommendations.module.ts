@@ -5,7 +5,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { RecommendationsComponent } from "./recommendations.component";
 import { RolesCardsComponent } from './roles-cards/roles-cards.component';
 import { DataEngineerComponent } from './roles-cards/3-data-engineer/data-engineer.component';
-import { RoleNotDefinedModalComponent } from './roles-cards/role-not-defined-modal.component'; // Corregir la importación
+import { RoleNotDefinedModalComponent } from './roles-cards/role-not-defined-modal.component';
 
 const routes: Routes = [
   {

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { RoleCard, roleCards } from './roles-cards-data';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { RoleNotDefinedModalComponent } from './role-not-defined-modal.component';
 
 @Component({
   selector: 'app-roles-cards',
@@ -10,7 +12,7 @@ export class RolesCardsComponent implements OnInit {
 
   roleCards: RoleCard[];
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private modalService: NgbModal) {
     this.roleCards = roleCards;
   }
 
@@ -18,6 +20,14 @@ export class RolesCardsComponent implements OnInit {
   }
 
   redirectToPage(route: string): void {
-    this.router.navigate([route]);
+    if (route === '#') {
+      this.openModal();
+    } else {
+      this.router.navigate([route]);
+    }
+  }
+
+  openModal(): void {
+    this.modalService.open(RoleNotDefinedModalComponent);
   }
 }
