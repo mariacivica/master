@@ -21,8 +21,7 @@ import { SpinnerComponent } from './shared/spinner.component';
 import { InboxComponent } from './inbox/inbox.component';
 
 import { LoginComponent, InvalidCredentialsModalContent } from './login/login.component';
-import { HomepageComponent } from './homepage/homepage.component';
-
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +30,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     InboxComponent,
     LoginComponent,
     InvalidCredentialsModalContent,
-    HomepageComponent,
-
-
+    HomeComponent,
   ],
   imports: [
     CommonModule,
@@ -43,59 +40,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     ReactiveFormsModule,
     HttpClientModule,
     NgbModule,
-    RouterModule.forRoot([
-      { path: 'login', component: LoginComponent },
-      {
-        path: '',
-        component: FullComponent,
-        children: [
-          { path: '', redirectTo: '/login', pathMatch: 'full' },
-          { path: 'homepage', component: HomepageComponent },
-          // otras rutas aquí
-          {
-            path: 'dashboard',
-            loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule) // Cargar módulo de dashboard
-          },
-          {
-            path: 'about',
-            loadChildren: () => import('./about/about.module').then(m => m.AboutModule) // Cargar módulo de about
-          },
-          {
-            path: 'component',
-            loadChildren: () => import('./component/component.module').then(m => m.ComponentsModule) // Cargar módulo de component
-          },
-          {
-            path: 'recommendations',
-            loadChildren: () => import('./recommendations/recommendations.module').then(m => m.RecommendationsModule) // Cargar módulo de recommendations
-          },
-          {
-            path: 'resources',
-            loadChildren: () => import('./resources/resources.module').then(m => m.ResourcesModule) // Cargar módulo de resources
-          },
-          {
-            path: 'h-bi',
-            loadComponent: () => import('./resources/blog-cards/4-h-bi/h-bi.component').then(m => m.hBiComponent) // Cargar componente h-bi
-          },
-          {
-            path: 'h-plataformas-datos',
-            loadComponent: () => import('./resources/blog-cards/7-h-plataformas-datos/h-plataformas-datos.component').then(m => m.hPlataformasDatosComponent) // Cargar componente h-plataformas-datos
-          },
-          {
-            path: 'front',
-            loadComponent: () => import('./resources/blog-cards/2-front/front.component').then(m => m.FrontComponent) // Cargar componente front
-          },
-          {
-            path: 'back',
-            loadComponent: () => import('./resources/blog-cards/3-back/back.component').then(m => m.BackComponent) // Cargar componente back
-          },
-          {
-            path: 'inbox',
-            component: InboxComponent // Añadir componente inbox
-          }
-        ]
-      },
-      { path: '**', redirectTo: '/login' } // Redirigir a login para rutas no encontradas
-    ]),
+    RouterModule.forRoot(Approutes),
     NgbNavModule,
   ],
 

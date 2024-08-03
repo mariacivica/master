@@ -4,20 +4,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { FullComponent } from './layouts/full/full.component';
 import { InboxComponent } from './inbox/inbox.component';
 import { LoginComponent } from './login/login.component';
-
-import { HomepageComponent } from './homepage/homepage.component';
+import { HomeComponent } from './home/home.component';
 
 export const Approutes: Routes = [
   { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },  // Ruta de home fuera del FullComponent
   {
     path: '',
     component: FullComponent,
     children: [
-      { path: '', redirectTo: '/login', pathMatch: 'full' },
-      {
-        path: 'homepage',
-        component: HomepageComponent
-      },
+      { path: '', redirectTo: '/login', pathMatch: 'full' },  // Redirigir a /login por defecto
       {
         path: 'dashboard',
         loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
@@ -61,7 +57,7 @@ export const Approutes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/login'
+    redirectTo: '/login'  // Redirigir a /login por defecto para rutas no encontradas
   }
 ];
 

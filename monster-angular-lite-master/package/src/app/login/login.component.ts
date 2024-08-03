@@ -20,7 +20,7 @@ export class LoginComponent {
 
     if (email === 'maria.gonzalez@civica-soft.com' && password === 'civicampus') {
       localStorage.setItem('user', 'authenticated');
-      this.router.navigate(['/homepage']);
+      this.router.navigate(['/home']);
     } else {
       this.modalService.open(InvalidCredentialsModalContent);
     }

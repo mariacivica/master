@@ -1,0 +1,119 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff; /* Cambiar a blanco */
+  background-image: url('../../assets/images/home/fondo_ondas_gris-claro.png');
+  background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centrar la imagen de fondo */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  padding-top: 100px; /* Aumentar el padding superior */
+  font-family: 'Montserrat', sans-serif;
+  color: #333333; /* Color del texto general */
+}
+
+.welcome-text {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px; /* Aumentar el margen inferior */
+  opacity: 0;
+  animation: fadeIn 2s 0.5s forwards; /* Animación de entrada con delay */
+  font-family: 'Montserrat', sans-serif; /* Usar la misma fuente para el texto de bienvenida */
+}
+
+.home-boxes {
+  display: flex;
+  justify-content: space-between; /* Ajustar para mejor separación */
+  width: 90%; /* Ajustar el ancho del contenedor de los cuadros */
+  margin-bottom: 70px; /* Reducir el margen inferior para acercar las cajas a las noticias */
+}
+
+.home-box { /* Estilo de las cajas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco con más transparencia */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 15px; /* Ajustar margen horizontal entre los cuadros */
+  width: 20%;
+  height: 300px; /* Incrementar la altura de los cuadros */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Añadir transición para el cambio de color */
+  opacity: 0;
+  animation: fadeInLeft 1s forwards; /* Animación de aparición desde la izquierda */
+  font-family: 'Montserrat', sans-serif; /* Usar la misma fuente para las cajas */
+  color: #FFAD32; /* Color del texto de las cajas */
+}
+
+.home-box:nth-child(1) {
+  animation-delay: 1s; /* Retardo para el primer cuadro */
+}
+
+.home-box:nth-child(2) {
+  animation-delay: 1.5s; /* Retardo para el segundo cuadro */
+}
+
+.home-box:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.home-box:nth-child(4) {
+  animation-delay: 2.5s;
+}
+
+.home-box:hover {
+  background-color: rgba(255, 173, 50, 0.6); /* Fondo con más transparencia al pasar el cursor */
+  color: #fff; /* Cambiar color del texto al pasar el cursor sobre las cajas */
+}
+
+.news {
+  width: 90%;
+  margin-top: 100px; /* Aumentar el margen superior para separar las noticias de las cajas */
+  opacity: 0;
+  animation: fadeIn 2s 3s forwards;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333; /* Color del texto general */
+}
+
+.news h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333; /* Color del texto general */
+}
+
+.news-item {
+  background-color: rgba(255, 255, 255, 0.6); /* Fondo blanco con más transparencia para las noticias */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333; /* Color del texto general */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
