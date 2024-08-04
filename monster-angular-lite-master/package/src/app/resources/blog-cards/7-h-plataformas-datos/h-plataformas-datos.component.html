@@ -33,7 +33,9 @@
                               'sin-iniciar': platform.status === 'Sin iniciar'
                             }">{{ platform.status }}</span>
                           </td>
-                          <td><a href="{{ platform.resourceLink }}" class="custom-link">Recursos Disponibles</a></td>
+                          <td>
+                            <a href="#" class="custom-link" (click)="showResourceModal($event, platform)">Recursos Disponibles</a>
+                          </td>
                         </tr>
                       </tbody>
                     </table>
@@ -62,7 +64,7 @@
   </div>
 </div>
 
-<!-- Modal -->
+<!-- Test Modal -->
 <div class="modal fade" id="testModal" tabindex="-1" aria-labelledby="testModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -72,6 +74,24 @@
       </div>
       <div class="modal-body">
         {{ modalMessage }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" style="background-color: #FF5038; border-color: #FF5038;" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Resources Modal -->
+<div class="modal fade" id="resourceModal" tabindex="-1" aria-labelledby="resourceModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="resourceModalLabel">Recursos Disponibles</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        No hay recursos disponibles para esta tecnología.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" style="background-color: #FF5038; border-color: #FF5038;" data-bs-dismiss="modal">Aceptar</button>

@@ -37,4 +37,13 @@ export class BackComponent {
       modal.show();
     }
   }
+
+  showResourceModal(event: Event, resource: { name: string }): void {
+    event.preventDefault();
+    const modalElement = document.getElementById('resourceModal');
+    if (modalElement) {
+      const modal = new (window as any).bootstrap.Modal(modalElement);
+      modal.show();
+    }
+  }
 }
