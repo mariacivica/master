@@ -1,24 +1,41 @@
 <div class="home-container">
-  <div class="welcome-text">¡Bienvenido/a a Civicampus!</div>
-  <div class="home-boxes">
-    <div class="home-box" (click)="navigateTo('dashboard')">Mi perfil</div>
-    <div class="home-box" (click)="navigateTo('recommendations')">Itinerarios</div>
-    <div class="home-box" (click)="navigateTo('resources')">Recursos</div>
-    <div class="home-box" (click)="navigateTo('about')">A cerca de</div>
+  <div class="left-section">
+    <div class="welcome-text">¡Bienvenido/a a <strong>Civicampus</strong>!</div>
+    <div class="home-boxes">
+      <div class="home-box" (click)="navigateTo('dashboard')" style="background-image: url('../../assets/images/home/fondo_perfil.png');">
+        <i class="bi bi-person-circle"></i> <!-- Icono añadido -->
+        <span>Mi perfil</span> <!-- Envolver el texto en un <span> -->
+      </div>
+      <div class="home-box" (click)="navigateTo('recommendations')" style="background-image: url('../../assets/images/home/fondo_itinerario.png');">
+        <i class="bi bi-briefcase"></i> <!-- Icono añadido -->
+        <span>Itinerarios</span> <!-- Envolver el texto en un <span> -->
+      </div>
+      <div class="home-box" (click)="navigateTo('resources')" style="background-image: url('../../assets/images/home/fondo_recursos.png');">
+        <i class="bi bi-folder"></i> <!-- Icono añadido -->
+        <span>Recursos</span> <!-- Envolver el texto en un <span> -->
+      </div>
+      <div class="home-box" (click)="navigateTo('about')" style="background-image: url('../../assets/images/home/fondo_acerca_de.png');">
+        <i class="bi bi-info-circle"></i> <!-- Icono añadido -->
+        <span>A cerca de</span> <!-- Envolver el texto en un <span> -->
+      </div>
+    </div>
   </div>
-  <div class="news">
+  <div class="news-section">
+    <div class="logo-container">
+      <img src="../../assets/images/home/logo_civica_campus.png" alt="Civica Campus Logo">
+    </div>
     <h2>Últimas Noticias</h2>
     <div class="news-item">
-      <h3>Nuevo Curso: Ingeniería de Datos</h3>
+      <h3>Nuevo Curso: Ingeniería del dato</h3>
       <p>Fecha de inicio: 30/09/2024</p>
       <p>Fecha de fin: 29/11/2024</p>
-      <p>Estamos emocionados de anunciar un nuevo curso sobre Ingeniería de Datos disponible para inscripciones. ¡Si estas interesado ponte en contacto con nosotros!</p>
+      <p>Estamos emocionados de anunciar un nuevo curso sobre Ingeniería del dato disponible para inscripciones. ¡Si estás interesado ponte en contacto con nosotros!</p>
     </div>
     <div class="news-item">
-      <h3>Evento: Taller de Comunicación Efectiva</h3>
-      <p>Fecha de inicio: 23/09/2024</p>
-      <p>Fecha de fin: 27/09/2024</p>
-      <p>No te pierdas nuestro próximo taller sobre Comunicación Efectiva. Aprende técnicas y estrategias para mejorar tus habilidades comunicativas.</p>
+      <h3>Nuevo Curso: Gobierno del dato</h3>
+      <p>Fecha de inicio: 14/01/2024</p>
+      <p>Fecha de fin: 19/03/2024</p>
+      <p>Estamos emocionados de anunciar un nuevo curso sobre Gobierno del dato disponible para inscripciones. ¡Si estás interesado ponte en contacto con nosotros!</p>
     </div>
   </div>
 </div>

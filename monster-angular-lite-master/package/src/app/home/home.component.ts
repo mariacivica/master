@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class HomeComponent implements AfterViewInit {
   subtitle: string;
 
-  constructor(private router: Router) { // Inyectar el Router
+  constructor(private router: Router) {
     this.subtitle = 'Welcome to the home!';
     if (!localStorage.getItem('user')) {
       this.router.navigate(['/login']);
@@ -18,7 +18,7 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit() { }
 
-  navigateTo(path: string) { // Método para navegar a diferentes rutas
+  navigateTo(path: string) {
     this.router.navigate([`/${path}`]);
   }
 

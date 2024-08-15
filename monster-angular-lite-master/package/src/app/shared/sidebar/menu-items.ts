@@ -29,7 +29,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/about',
     title: 'A cerca de',
-    icon: 'bi bi-people',
+    icon: 'bi bi-info-circle',
     class: '',
     extralink: false,
     submenu: []
