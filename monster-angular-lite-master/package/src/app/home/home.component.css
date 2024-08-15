@@ -106,6 +106,8 @@
   margin-bottom: 20px;
   font-size: 24px;
   color: #333333;
+  border-bottom: 3px solid #FF5038; /* Añade esta línea para crear la separación */
+  padding-bottom: 10px; /* Añade algo de espacio entre el texto y la línea */
 }
 
 .news-item {
@@ -134,15 +136,19 @@
 }
 
 .news-item .news-date {
-  display: flex;
+  display: inline-flex; /* Cambiar a inline-flex para que el tamaño se ajuste al contenido */
   align-items: center;
   font-size: 14px;
-  color: #666666;
+  color: #FFFFFF; /* Cambiar color del texto a blanco */
+  background-color: #FF5038; /* Fondo rojo */
+  padding: 5px 10px; /* Espaciado interno para hacer que el botón se vea como un chip */
+  border-radius: 20px; /* Redondeado completo */
+  margin-top: 10px; /* Espacio superior para separar del contenido anterior */
 }
 
 .news-item .news-date i {
   font-size: 16px;
-  color: #FF5038;
+  color: #FFFFFF; /* Color blanco para el ícono */
   margin-right: 5px;
 }
 

@@ -3,20 +3,20 @@
     <div class="welcome-text">¡Bienvenido/a a <strong>Civicampus</strong>!</div>
     <div class="home-boxes">
       <div class="home-box" (click)="navigateTo('dashboard')" style="background-image: url('../../assets/images/home/fondo_perfil.png');">
-        <i class="bi bi-person-circle"></i> <!-- Icono añadido -->
-        <span>Mi perfil</span> <!-- Envolver el texto en un <span> -->
+        <i class="bi bi-person-circle"></i>
+        <span>Mi perfil</span>
       </div>
       <div class="home-box" (click)="navigateTo('recommendations')" style="background-image: url('../../assets/images/home/fondo_itinerario.png');">
-        <i class="bi bi-briefcase"></i> <!-- Icono añadido -->
-        <span>Itinerarios</span> <!-- Envolver el texto en un <span> -->
+        <i class="bi bi-briefcase"></i>
+        <span>Itinerarios</span>
       </div>
       <div class="home-box" (click)="navigateTo('resources')" style="background-image: url('../../assets/images/home/fondo_recursos.png');">
-        <i class="bi bi-folder"></i> <!-- Icono añadido -->
-        <span>Recursos</span> <!-- Envolver el texto en un <span> -->
+        <i class="bi bi-folder"></i>
+        <span>Recursos</span>
       </div>
       <div class="home-box" (click)="navigateTo('about')" style="background-image: url('../../assets/images/home/fondo_acerca_de.png');">
-        <i class="bi bi-info-circle"></i> <!-- Icono añadido -->
-        <span>A cerca de</span> <!-- Envolver el texto en un <span> -->
+        <i class="bi bi-info-circle"></i>
+        <span>A cerca de</span>
       </div>
     </div>
   </div>
@@ -27,15 +27,19 @@
     <h2>Últimas Noticias</h2>
     <div class="news-item">
       <h3>Nuevo Curso: Ingeniería del dato</h3>
-      <p>Fecha de inicio: 30/09/2024</p>
-      <p>Fecha de fin: 29/11/2024</p>
       <p>Estamos emocionados de anunciar un nuevo curso sobre Ingeniería del dato disponible para inscripciones. ¡Si estás interesado ponte en contacto con nosotros!</p>
+      <div class="news-date">
+        <i class="bi bi-calendar"></i>
+        <span>30/09 - 29/11</span>
+      </div>
     </div>
     <div class="news-item">
       <h3>Nuevo Curso: Gobierno del dato</h3>
-      <p>Fecha de inicio: 14/01/2024</p>
-      <p>Fecha de fin: 19/03/2024</p>
       <p>Estamos emocionados de anunciar un nuevo curso sobre Gobierno del dato disponible para inscripciones. ¡Si estás interesado ponte en contacto con nosotros!</p>
+      <div class="news-date">
+        <i class="bi bi-calendar"></i>
+        <span>14/01 - 19/03</span>
+      </div>
     </div>
   </div>
 </div>
