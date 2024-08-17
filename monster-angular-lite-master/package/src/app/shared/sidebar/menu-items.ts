@@ -13,7 +13,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/recommendations',
     title: 'Itinerarios',
-    icon: 'bi bi-briefcase',
+    icon: 'bi bi-list-check',
     class: '',
     extralink: false,
     submenu: []
@@ -21,7 +21,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/resources',
     title: 'Recursos',
-    icon: 'bi bi-folder',
+    icon: 'bi bi-gear',
     class: '',
     extralink: false,
     submenu: []
