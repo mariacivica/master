@@ -3,16 +3,16 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('../../assets/images/home/fondo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: 'Montserrat', sans-serif;
-  color: #333333;
+  background-image: url('../../assets/images/home/fondo.png'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajustar el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centrar la imagen de fondo */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  font-family: 'Montserrat', sans-serif; /* Usar la misma fuente que en la pantalla de inicio */
+  color: #333333; /* Color del texto general */
 }
 
 .login-box {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4); /* Fondo blanco con más transparencia */
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,7 @@ h2 {
   margin-bottom: 20px;
   font-size: 24px;
   color: #333;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Asegurarse de que el título también use la misma fuente */
 }
 
 .form-group {
@@ -36,7 +36,7 @@ h2 {
   display: block;
   margin-bottom: 5px;
   color: #333;
-  font-family: 'Montserrat', sans-serif; /
+  font-family: 'Montserrat', sans-serif; /* Usar la misma fuente para las etiquetas */
 }
 
 .form-control {
@@ -44,7 +44,7 @@ h2 {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Usar la misma fuente para los campos del formulario */
 }
 
 .form-control:focus {
@@ -60,7 +60,7 @@ h2 {
   padding: 10px;
   border-radius: 4px;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Usar la misma fuente para el botón */
 }
 
 .btn-primary:hover {
