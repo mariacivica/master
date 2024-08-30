@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "monster-angular-lite": {
+    "civicampus_frontend_angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -21,7 +21,7 @@
               "ng-apexcharts",
               "apexcharts"
             ],
-            "outputPath": "dist/monster-angular-lite",
+            "outputPath": "dist/civicampus_frontend_angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "monster-angular-lite:build:production"
+              "browserTarget": "civicampus_frontend_angular:build:production"
             },
             "development": {
-              "browserTarget": "monster-angular-lite:build:development"
+              "browserTarget": "civicampus_frontend_angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "monster-angular-lite:build"
+            "browserTarget": "civicampus_frontend_angular:build"
           }
         },
         "test": {
