@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap'; // Importar NgbActiveModal
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http'; // Importar HttpClient, HttpParams, HttpHeaders
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,11 @@ import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class LoginComponent {
 
-  constructor(private router: Router, private modalService: NgbModal) {}
+  constructor(
+    private router: Router,
+    private modalService: NgbModal,
+    private http: HttpClient // Inyectar HttpClient
+  ) {}
 
   onSubmit(event: Event) {
     event.preventDefault();
@@ -18,12 +23,36 @@ export class LoginComponent {
     const email = emailInput?.value;
     const password = passwordInput?.value;
 
-    if (email === 'maria.gonzalez@civica-soft.com' && password === 'civicampus') {
-      localStorage.setItem('user', 'authenticated');
-      this.router.navigate(['/home']);
-    } else {
-      this.modalService.open(InvalidCredentialsModalContent);
-    }
+    console.log('Email:', email);
+    console.log('Password:', password);
+
+    const body = new HttpParams()
+      .set('email', email)
+      .set('password', password);
+
+    console.log('Body:', body.toString());
+
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/x-www-form-urlencoded'
+    });
+
+    // Realizar la solicitud HTTP POST al backend
+    this.http.post('http://localhost:8080/api/auth/login', body.toString(), { headers, responseType: 'text' })
+      .subscribe(
+        response => {
+          console.log('Response:', response);
+          if (response === 'Login exitoso') {
+            localStorage.setItem('user', 'authenticated');
+            this.router.navigate(['/home']);
+          } else {
+            this.modalService.open(InvalidCredentialsModalContent);
+          }
+        },
+        error => {
+          console.error('Error de autenticación', error);
+          this.modalService.open(InvalidCredentialsModalContent);
+        }
+      );
   }
 }
 

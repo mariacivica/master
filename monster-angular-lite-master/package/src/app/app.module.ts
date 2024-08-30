@@ -43,12 +43,12 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot(Approutes),
     NgbNavModule,
   ],
-
   providers: [
     {
       provide: LocationStrategy,
       useClass: PathLocationStrategy
     },
+    NgbActiveModal,
   ],
   bootstrap: [AppComponent]
 })
