@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap'; // Importar NgbActiveModal
-import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http'; // Importar HttpClient, HttpParams, HttpHeaders
+import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +13,7 @@ export class LoginComponent {
   constructor(
     private router: Router,
     private modalService: NgbModal,
-    private http: HttpClient // Inyectar HttpClient
+    private http: HttpClient
   ) {}
 
   onSubmit(event: Event) {
@@ -24,20 +24,21 @@ export class LoginComponent {
     const password = passwordInput?.value;
 
     console.log('Email:', email);
-    console.log('Password:', password);
+    // Evitar loggear la contraseña en texto plano
+    console.log('Password: ****'); // Mostrar un valor seguro en lugar de la contraseña
 
-    const body = new HttpParams()
-      .set('email', email)
-      .set('password', password);
+    // Construir manualmente el cuerpo de la solicitud
+    const body = `email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`;
 
-    console.log('Body:', body.toString());
+    // Loggear el cuerpo de la solicitud sin mostrar la contraseña
+    console.log('Body:', `email=${email}&password=****`);
 
     const headers = new HttpHeaders({
       'Content-Type': 'application/x-www-form-urlencoded'
     });
 
     // Realizar la solicitud HTTP POST al backend
-    this.http.post('http://localhost:8080/api/auth/login', body.toString(), { headers, responseType: 'text' })
+    this.http.post('http://localhost:8080/api/auth/login', body, { headers, responseType: 'text' })
       .subscribe(
         response => {
           console.log('Response:', response);
